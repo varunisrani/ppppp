@@ -58,7 +58,12 @@ DEFAULT_LINKEDIN_USERNAME = os.getenv('LINKEDIN_USERNAME')
 DEFAULT_LINKEDIN_PASSWORD = os.getenv('LINKEDIN_PASSWORD')
 
 # Google API settings
-SERVICE_ACCOUNT_FILE = os.getenv('GOOGLE_SERVICE_ACCOUNT_FILE', "gen-lang-client-0669898182-80f330433de5.json")
+RENDER_ENVIRONMENT = os.getenv('RENDER', 'false').lower() == 'true'
+if RENDER_ENVIRONMENT:
+    SERVICE_ACCOUNT_FILE = '/etc/secrets/gen-lang-client-0669898182-f88dce7f97c7.json'
+else:
+    SERVICE_ACCOUNT_FILE = os.getenv('GOOGLE_SERVICE_ACCOUNT_FILE', "gen-lang-client-0669898182-f88dce7f97c7.json")
+
 SCOPES = [
     'https://www.googleapis.com/auth/spreadsheets',
     'https://www.googleapis.com/auth/drive'
@@ -86,8 +91,11 @@ def setup_logging():
 def create_directory(dir_name):
     """Create a directory if it doesn't exist"""
     if not os.path.exists(dir_name):
-        os.makedirs(dir_name)
-        logging.info(f"Created directory: {dir_name}")
+        try:
+            os.makedirs(dir_name)
+            logging.info(f"Created directory: {dir_name}")
+        except Exception as e:
+            logging.warning(f"Could not create directory {dir_name}: {e}")
     return dir_name
 
 def get_google_sheets_service():
@@ -97,6 +105,10 @@ def get_google_sheets_service():
         
         if not os.path.exists(SERVICE_ACCOUNT_FILE):
             logging.error(f"Service account file not found: {SERVICE_ACCOUNT_FILE}")
+            if RENDER_ENVIRONMENT:
+                logging.error("Running in Render but credentials file not found in /etc/secrets")
+            else:
+                logging.error("Running locally but credentials file not found in current directory")
             return None
             
         creds = Credentials.from_service_account_file(
