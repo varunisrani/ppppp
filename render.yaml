@@ -3,15 +3,18 @@ services:
     name: linkedin-scraper
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
+    startCommand: gunicorn app:app
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.9.0
-      - key: APIFY_TOKEN
-        sync: false
-      - key: LINKEDIN_USERNAME
-        sync: false
-      - key: LINKEDIN_PASSWORD
-        sync: false
+      - key: PYTHONUNBUFFERED
+        value: "true"
       - key: RENDER
-        value: true
+        value: "true"
+    packages:
+      - chromium-browser
+      - chromium-chromedriver
+    healthCheckPath: /status
+    autoDeploy: false
+    disk:
+      name: chrome-data
+      mountPath: /tmp
+      sizeGB: 1

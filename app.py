@@ -18,6 +18,9 @@ import time
 import json
 from datetime import datetime
 from dotenv import load_dotenv
+import undetected_chromedriver as uc
+from selenium.webdriver.chrome.options import Options
+import platform
 
 # Load environment variables
 load_dotenv()
@@ -137,6 +140,44 @@ def start_monitoring_thread():
     monitoring_thread.daemon = True
     monitoring_thread.start()
     logger.info("Started new monitoring thread")
+
+def setup_chrome_driver():
+    """Setup Chrome driver with undetected-chromedriver"""
+    try:
+        chrome_options = uc.ChromeOptions()
+        chrome_options.add_argument("--headless=new")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--window-size=1920,1080")
+        chrome_options.add_argument("--disable-extensions")
+        chrome_options.add_argument("--proxy-server='direct://'")
+        chrome_options.add_argument("--proxy-bypass-list=*")
+        chrome_options.add_argument("--start-maximized")
+        
+        if RENDER_ENVIRONMENT:
+            # Set specific Chrome binary path for Render
+            chrome_options.binary_location = "/usr/bin/chromium-browser"
+        
+        # Create and return the undetected Chrome driver
+        driver = uc.Chrome(options=chrome_options)
+        logger.info("Chrome driver initialized successfully!")
+        return driver
+    except Exception as e:
+        logger.error(f"Error initializing Chrome driver: {e}")
+        raise
+
+# Initialize the driver
+try:
+    driver = setup_chrome_driver()
+    print("Chrome driver initialized successfully!")
+    # Your code here...
+    
+except Exception as e:
+    print(f"Error initializing Chrome driver: {e}")
+finally:
+    if 'driver' in locals():
+        driver.quit()
 
 if __name__ == '__main__':
     # Start monitoring thread before running the Flask app

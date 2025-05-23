@@ -1,5 +1,6 @@
 # Core dependencies
-selenium
+selenium==4.16.0
+undetected-chromedriver==3.5.4
 webdriver-manager
 requests
 python-dotenv
