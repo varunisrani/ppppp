@@ -22,6 +22,9 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
+# Initialize logger first
+logger = setup_logging()
+
 # Setup Google Credentials
 GOOGLE_CREDS_PATH = '/etc/secrets/gen-lang-client-0669898182-f88dce7f97c7.json'
 if os.path.exists(GOOGLE_CREDS_PATH):
@@ -31,7 +34,6 @@ else:
     logger.warning(f"Google credentials file not found at {GOOGLE_CREDS_PATH}")
 
 app = Flask(__name__)
-logger = setup_logging()
 monitoring_thread = None
 should_stop = False
 
