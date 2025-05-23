@@ -115,7 +115,7 @@ def get_google_sheets_service():
             SERVICE_ACCOUNT_FILE, scopes=SCOPES)
         logging.info("Successfully loaded credentials from service account file")
         
-        service = build('sheets', 'v4', credentials=creds)
+        service = build('sheets', 'v4', credentials=creds, cache_discovery=False)
         logging.info("Successfully built Google Sheets service")
         
         # Test the service
