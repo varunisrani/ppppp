@@ -25,13 +25,22 @@ load_dotenv()
 # Initialize logger first
 logger = setup_logging()
 
-# Setup Google Credentials
-GOOGLE_CREDS_PATH = '/etc/secrets/gen-lang-client-0669898182-f88dce7f97c7.json'
-if os.path.exists(GOOGLE_CREDS_PATH):
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = GOOGLE_CREDS_PATH
-    logger.info(f"Using Google credentials from {GOOGLE_CREDS_PATH}")
-else:
-    logger.warning(f"Google credentials file not found at {GOOGLE_CREDS_PATH}")
+# Setup Google Credentials - Check both development and Render paths
+GOOGLE_CREDS_PATHS = [
+    '/etc/secrets/gen-lang-client-0669898182-f88dce7f97c7.json',  # Render path
+    'gen-lang-client-0669898182-f88dce7f97c7.json'  # Local development path
+]
+
+creds_found = False
+for creds_path in GOOGLE_CREDS_PATHS:
+    if os.path.exists(creds_path):
+        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = creds_path
+        logger.info(f"Using Google credentials from {creds_path}")
+        creds_found = True
+        break
+
+if not creds_found:
+    logger.error("Google credentials file not found in any of the expected locations")
 
 app = Flask(__name__)
 monitoring_thread = None
@@ -69,10 +78,11 @@ def start_continuous_monitoring():
             # Get Google Sheets service
             service = get_google_sheets_service()
             if service is None:
-                logger.error("Failed to initialize Google Sheets service")
+                logger.error("Failed to initialize Google Sheets service. Check credentials.")
                 time.sleep(30)
                 continue
 
+            logger.info("Successfully connected to Google Sheets service")
             logger.info("Checking for blank rows in Google Sheet...")
             blank_rows = find_blank_rows(sheet_id, service, logger)
             
@@ -88,6 +98,7 @@ def start_continuous_monitoring():
             
         except Exception as e:
             logger.error(f"Error in continuous monitoring: {str(e)}")
+            logger.error("Stack trace:", exc_info=True)  # Add stack trace for better debugging
             logger.info("Waiting 30 seconds before retrying...")
             time.sleep(30)
 
@@ -97,6 +108,7 @@ def home():
         "status": "running",
         "message": "LinkedIn Scraper API is active",
         "monitoring_active": monitoring_thread is not None and monitoring_thread.is_alive(),
+        "google_creds_configured": os.path.exists(os.getenv('GOOGLE_APPLICATION_CREDENTIALS', '')),
         "timestamp": datetime.now().isoformat()
     })
 
@@ -112,7 +124,8 @@ def status():
         "monitoring_status": status_msg,
         "monitoring_active": monitoring_thread is not None and monitoring_thread.is_alive(),
         "sheet_id": os.getenv('SHEET_ID'),
-        "google_creds_configured": os.path.exists('/etc/secrets/google-credentials.json'),
+        "google_creds_configured": os.path.exists(os.getenv('GOOGLE_APPLICATION_CREDENTIALS', '')),
+        "google_creds_path": os.getenv('GOOGLE_APPLICATION_CREDENTIALS', 'Not set'),
         "timestamp": datetime.now().isoformat()
     })
 
