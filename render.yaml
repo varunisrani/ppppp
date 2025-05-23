@@ -1,24 +1,22 @@
 services:
   - type: web
     name: linkedin-scraper
-    env: python
-    buildCommand: |
-      # Install Chrome and dependencies
-      apt-get update && apt-get install -y chromium chromium-driver
-      pip install -r requirements.txt
-    startCommand: gunicorn app:app
+    env: docker
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: PYTHONUNBUFFERED
         value: "true"
       - key: RENDER
         value: "true"
-      - key: CHROME_BIN
-        value: /usr/bin/chromium
-      - key: CHROMEDRIVER_PATH
-        value: /usr/bin/chromedriver
+      - key: PORT
+        value: "10000"
+      - key: SHEET_ID
+        value: 1srvBC83XVx1LS4d8gIiwkWM41sS0Yu3puOHmzwlixrY
+      - key: APIFY_TOKEN
+        sync: false # This makes it a secret
+      - key: LINKEDIN_USERNAME
+        sync: false # This makes it a secret
+      - key: LINKEDIN_PASSWORD
+        sync: false # This makes it a secret
     healthCheckPath: /status
     autoDeploy: false
-    disk:
-      name: chrome-data
-      mountPath: /tmp
-      sizeGB: 1
