@@ -2,16 +2,20 @@ services:
   - type: web
     name: linkedin-scraper
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      # Install Chrome and dependencies
+      apt-get update && apt-get install -y chromium chromium-driver
+      pip install -r requirements.txt
     startCommand: gunicorn app:app
     envVars:
       - key: PYTHONUNBUFFERED
         value: "true"
       - key: RENDER
         value: "true"
-    packages:
-      - chromium-browser
-      - chromium-chromedriver
+      - key: CHROME_BIN
+        value: /usr/bin/chromium
+      - key: CHROMEDRIVER_PATH
+        value: /usr/bin/chromedriver
     healthCheckPath: /status
     autoDeploy: false
     disk:

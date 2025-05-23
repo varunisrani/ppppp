@@ -157,7 +157,11 @@ def setup_chrome_driver():
         
         if RENDER_ENVIRONMENT:
             # Set specific Chrome binary path for Render
-            chrome_options.binary_location = "/usr/bin/chromium-browser"
+            chrome_options.binary_location = "/usr/bin/chromium"
+            chrome_options.add_argument('--disable-software-rasterizer')
+            chrome_options.add_argument('--disable-dev-tools')
+            chrome_options.add_argument('--no-zygote')
+            chrome_options.add_argument('--single-process')
         
         # Create and return the undetected Chrome driver
         driver = uc.Chrome(options=chrome_options)
