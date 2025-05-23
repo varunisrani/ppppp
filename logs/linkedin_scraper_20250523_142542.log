@@ -1,0 +1,190 @@
+2025-05-23 14:25:42,012 [INFO] Logging initialized. Log file: logs/linkedin_scraper_20250523_142542.log
+2025-05-23 14:25:42,013 [INFO] Starting automatic continuous monitoring...
+2025-05-23 14:25:42,013 [INFO] Started new monitoring thread
+2025-05-23 14:25:42,013 [INFO] Using Sheet ID: 1srvBC83XVx1LS4d8gIiwkWM41sS0Yu3puOHmzwlixrY
+2025-05-23 14:25:42,013 [INFO] LinkedIn credentials configured: Yes
+2025-05-23 14:25:42,013 [INFO] Initializing Google Sheets service using service account file: gen-lang-client-0669898182-80f330433de5.json
+2025-05-23 14:25:42,131 [INFO] Successfully loaded credentials from service account file
+2025-05-23 14:25:42,133 [INFO] file_cache is only supported with oauth2client<4.0.0
+2025-05-23 14:25:42,136 [INFO] Successfully built Google Sheets service
+2025-05-23 14:25:42,271 [INFO] Successfully verified spreadsheets() method availability
+2025-05-23 14:25:42,271 [INFO] Checking for blank rows in Google Sheet...
+2025-05-23 14:25:43,713 [INFO] Found required columns: profileUrl=4, LI Ads?=5, 30 days=6, Overall=7
+2025-05-23 14:25:43,714 [INFO] Found 9 rows with blank values in the specified columns
+2025-05-23 14:25:43,714 [INFO] Found 9 rows with blank values
+2025-05-23 14:25:43,714 [INFO] Starting continuous monitoring of Google Sheet
+2025-05-23 14:25:43,715 [INFO] Initializing Google Sheets service using service account file: gen-lang-client-0669898182-80f330433de5.json
+2025-05-23 14:25:43,831 [INFO] Successfully loaded credentials from service account file
+2025-05-23 14:25:43,831 [INFO] file_cache is only supported with oauth2client<4.0.0
+2025-05-23 14:25:43,833 [INFO] Successfully built Google Sheets service
+2025-05-23 14:25:43,958 [INFO] Successfully verified spreadsheets() method availability
+2025-05-23 14:25:43,958 [INFO] Testing Google Sheets API connection...
+2025-05-23 14:25:44,712 [INFO] Successfully connected to sheet: Sheet1
+2025-05-23 14:25:44,713 [INFO] Checking for blank rows in Google Sheet...
+2025-05-23 14:25:45,618 [INFO] Found required columns: profileUrl=4, LI Ads?=5, 30 days=6, Overall=7
+2025-05-23 14:25:45,619 [INFO] Found 9 rows with blank values in the specified columns
+2025-05-23 14:25:45,619 [INFO] Found 9 rows with blank values
+2025-05-23 14:25:45,619 [INFO] Processing batch of 9 profiles
+2025-05-23 14:25:45,619 [INFO] Starting Apify scraper for 9 profiles
+2025-05-23 14:25:47,073 [INFO] HTTP Request: POST https://api.apify.com/v2/acts/2SyF0bVxmgGr8IVCZ/runs "HTTP/1.1 201 Created"
+2025-05-23 14:25:47,136 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://192.168.91.183:10000
+2025-05-23 14:25:47,136 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-23 14:25:48,387 [INFO] HTTP Request: GET https://api.apify.com/v2/actor-runs/JTNDntjiKvfCHChg4?waitForFinish=999999 "HTTP/1.1 200 OK"
+2025-05-23 14:26:32,216 [INFO] HTTP Request: GET https://api.apify.com/v2/datasets/V8z2Acpdv8Gq9BXE1/items?offset=0&limit=1000 "HTTP/1.1 200 OK"
+2025-05-23 14:26:32,737 [INFO] Successfully scraped 9 profiles with Apify
+2025-05-23 14:26:32,741 [INFO] Extracting company details from profiles
+2025-05-23 14:26:32,741 [INFO] Scraping data for 9 companies
+2025-05-23 14:26:32,741 [INFO] Triggering new data collection for 9 companies...
+2025-05-23 14:26:33,750 [INFO] Collection triggered successfully. Snapshot ID: s_mb0kgu2c1j5unuki6c
+2025-05-23 14:26:33,750 [INFO] 
+Waiting for data collection to complete...
+2025-05-23 14:26:34,688 [INFO] Status: running...
+2025-05-23 14:26:40,816 [INFO] Data collection completed successfully!
+2025-05-23 14:26:40,816 [INFO] Fetching results...
+2025-05-23 14:26:43,381 [INFO] Successfully scraped 9 companies
+2025-05-23 14:26:43,381 [INFO] Initializing ChromeDriver...
+2025-05-23 14:26:43,382 [INFO] ====== WebDriver manager ======
+2025-05-23 14:26:43,960 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-23 14:26:44,112 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-23 14:26:44,213 [INFO] There is no [mac64] chromedriver "136.0.7103.113" for browser google-chrome "136.0.7103" in cache
+2025-05-23 14:26:44,223 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-23 14:26:44,543 [INFO] WebDriver version 136.0.7103.113 selected
+2025-05-23 14:26:44,545 [INFO] Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/136.0.7103.113/mac-arm64/chromedriver-mac-arm64.zip
+2025-05-23 14:26:44,546 [INFO] About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/136.0.7103.113/mac-arm64/chromedriver-mac-arm64.zip
+2025-05-23 14:26:44,633 [INFO] Driver downloading response is 200
+2025-05-23 14:26:45,921 [INFO] Get LATEST chromedriver version for google-chrome
+2025-05-23 14:26:46,548 [INFO] Driver has been saved in cache [/Users/varunisrani/.wdm/drivers/chromedriver/mac64/136.0.7103.113]
+2025-05-23 14:26:46,549 [INFO] ChromeDriver path from manager: /Users/varunisrani/.wdm/drivers/chromedriver/mac64/136.0.7103.113/chromedriver-mac-arm64/chromedriver
+2025-05-23 14:26:48,124 [INFO] Logging in to LinkedIn...
+2025-05-23 14:26:49,333 [INFO] Login page loaded successfully
+2025-05-23 14:26:49,561 [INFO] Username entered
+2025-05-23 14:26:49,924 [INFO] Password entered
+2025-05-23 14:26:51,676 [INFO] Login form submitted
+2025-05-23 14:26:53,681 [INFO] Scraping ad counts for companies
+2025-05-23 14:26:53,681 [INFO] Processing Cognida.ai (ID: 80048535)
+2025-05-23 14:26:53,681 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=80048535
+2025-05-23 14:27:06,801 [INFO] Created directory: screenshots
+2025-05-23 14:27:07,423 [INFO] Screenshot saved to screenshots/ad_library_1747990626.png
+2025-05-23 14:27:07,423 [INFO] Screenshot saved to screenshots/ad_library_1747990626.png
+2025-05-23 14:27:07,437 [INFO] Found 8 ads (largest match)
+2025-05-23 14:27:07,437 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=80048535&dateOption=last-30-days
+2025-05-23 14:27:21,173 [INFO] Screenshot saved to screenshots/ad_library_1747990640.png
+2025-05-23 14:27:21,174 [INFO] Screenshot saved to screenshots/ad_library_1747990640.png
+2025-05-23 14:27:21,187 [INFO] Found 6 ads (largest match)
+2025-05-23 14:27:21,187 [INFO] Ad counts for Cognida.ai:
+2025-05-23 14:27:21,187 [INFO]   All time: 8
+2025-05-23 14:27:21,187 [INFO]   Last 30 days: 6
+2025-05-23 14:27:23,192 [INFO] Processing Sprinto (ID: 31215334)
+2025-05-23 14:27:23,193 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=31215334
+2025-05-23 14:27:37,088 [INFO] Screenshot saved to screenshots/ad_library_1747990656.png
+2025-05-23 14:27:37,089 [INFO] Screenshot saved to screenshots/ad_library_1747990656.png
+2025-05-23 14:27:37,113 [INFO] Found 10151 ads (largest match)
+2025-05-23 14:27:37,113 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=31215334&dateOption=last-30-days
+2025-05-23 14:27:51,041 [INFO] Screenshot saved to screenshots/ad_library_1747990670.png
+2025-05-23 14:27:51,042 [INFO] Screenshot saved to screenshots/ad_library_1747990670.png
+2025-05-23 14:27:51,067 [INFO] Found 188 ads (largest match)
+2025-05-23 14:27:51,067 [INFO] Ad counts for Sprinto:
+2025-05-23 14:27:51,067 [INFO]   All time: 10151
+2025-05-23 14:27:51,067 [INFO]   Last 30 days: 188
+2025-05-23 14:27:53,072 [INFO] Processing Syren (ID: 31334310)
+2025-05-23 14:27:53,072 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=31334310
+2025-05-23 14:28:06,081 [INFO] Screenshot saved to screenshots/ad_library_1747990685.png
+2025-05-23 14:28:06,081 [INFO] Screenshot saved to screenshots/ad_library_1747990685.png
+2025-05-23 14:28:06,097 [INFO] No ads found on this page
+2025-05-23 14:28:06,097 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=31334310&dateOption=last-30-days
+2025-05-23 14:28:19,106 [INFO] Screenshot saved to screenshots/ad_library_1747990698.png
+2025-05-23 14:28:19,107 [INFO] Screenshot saved to screenshots/ad_library_1747990698.png
+2025-05-23 14:28:19,121 [INFO] No ads found on this page
+2025-05-23 14:28:19,122 [INFO] Ad counts for Syren:
+2025-05-23 14:28:19,122 [INFO]   All time: 0
+2025-05-23 14:28:19,122 [INFO]   Last 30 days: 0
+2025-05-23 14:28:21,127 [INFO] Processing Clarifai (ID: 10064814)
+2025-05-23 14:28:21,127 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=10064814
+2025-05-23 14:28:34,470 [INFO] Screenshot saved to screenshots/ad_library_1747990713.png
+2025-05-23 14:28:34,470 [INFO] Screenshot saved to screenshots/ad_library_1747990713.png
+2025-05-23 14:28:34,487 [INFO] Found 39 ads (largest match)
+2025-05-23 14:28:34,487 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=10064814&dateOption=last-30-days
+2025-05-23 14:28:47,619 [INFO] Screenshot saved to screenshots/ad_library_1747990727.png
+2025-05-23 14:28:47,620 [INFO] Screenshot saved to screenshots/ad_library_1747990727.png
+2025-05-23 14:28:47,636 [INFO] No ads found on this page
+2025-05-23 14:28:47,636 [INFO] Ad counts for Clarifai:
+2025-05-23 14:28:47,636 [INFO]   All time: 39
+2025-05-23 14:28:47,636 [INFO]   Last 30 days: 0
+2025-05-23 14:28:49,642 [INFO] Processing Upflow (ID: 27199126)
+2025-05-23 14:28:49,642 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=27199126
+2025-05-23 14:29:02,644 [INFO] Screenshot saved to screenshots/ad_library_1747990742.png
+2025-05-23 14:29:02,645 [INFO] Screenshot saved to screenshots/ad_library_1747990742.png
+2025-05-23 14:29:02,659 [INFO] No ads found on this page
+2025-05-23 14:29:02,659 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=27199126&dateOption=last-30-days
+2025-05-23 14:29:15,625 [INFO] Screenshot saved to screenshots/ad_library_1747990755.png
+2025-05-23 14:29:15,625 [INFO] Screenshot saved to screenshots/ad_library_1747990755.png
+2025-05-23 14:29:15,639 [INFO] No ads found on this page
+2025-05-23 14:29:15,640 [INFO] Ad counts for Upflow:
+2025-05-23 14:29:15,640 [INFO]   All time: 0
+2025-05-23 14:29:15,640 [INFO]   Last 30 days: 0
+2025-05-23 14:29:17,640 [INFO] Processing Lucidity (ID: 72629072)
+2025-05-23 14:29:17,641 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=72629072
+2025-05-23 14:29:31,143 [INFO] Screenshot saved to screenshots/ad_library_1747990770.png
+2025-05-23 14:29:31,143 [INFO] Screenshot saved to screenshots/ad_library_1747990770.png
+2025-05-23 14:29:31,162 [INFO] Found 50 ads (largest match)
+2025-05-23 14:29:31,162 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=72629072&dateOption=last-30-days
+2025-05-23 14:29:44,660 [INFO] Screenshot saved to screenshots/ad_library_1747990784.png
+2025-05-23 14:29:44,660 [INFO] Screenshot saved to screenshots/ad_library_1747990784.png
+2025-05-23 14:29:44,672 [INFO] Found 10 ads (largest match)
+2025-05-23 14:29:44,672 [INFO] Ad counts for Lucidity:
+2025-05-23 14:29:44,672 [INFO]   All time: 50
+2025-05-23 14:29:44,672 [INFO]   Last 30 days: 10
+2025-05-23 14:29:46,678 [INFO] Processing StarAgile (ID: 13222113)
+2025-05-23 14:29:46,678 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=13222113
+2025-05-23 14:30:00,226 [INFO] Screenshot saved to screenshots/ad_library_1747990799.png
+2025-05-23 14:30:00,226 [INFO] Screenshot saved to screenshots/ad_library_1747990799.png
+2025-05-23 14:30:00,244 [INFO] Found 17 ads (largest match)
+2025-05-23 14:30:00,245 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=13222113&dateOption=last-30-days
+2025-05-23 14:30:13,377 [INFO] Screenshot saved to screenshots/ad_library_1747990812.png
+2025-05-23 14:30:13,377 [INFO] Screenshot saved to screenshots/ad_library_1747990812.png
+2025-05-23 14:30:13,392 [INFO] No ads found on this page
+2025-05-23 14:30:13,392 [INFO] Ad counts for StarAgile:
+2025-05-23 14:30:13,392 [INFO]   All time: 17
+2025-05-23 14:30:13,392 [INFO]   Last 30 days: 0
+2025-05-23 14:30:15,397 [INFO] Processing i95Dev (ID: 2161027)
+2025-05-23 14:30:15,398 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=2161027
+2025-05-23 14:30:28,423 [INFO] Screenshot saved to screenshots/ad_library_1747990827.png
+2025-05-23 14:30:28,424 [INFO] Screenshot saved to screenshots/ad_library_1747990827.png
+2025-05-23 14:30:28,438 [INFO] No ads found on this page
+2025-05-23 14:30:28,438 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=2161027&dateOption=last-30-days
+2025-05-23 14:30:41,411 [INFO] Screenshot saved to screenshots/ad_library_1747990840.png
+2025-05-23 14:30:41,412 [INFO] Screenshot saved to screenshots/ad_library_1747990840.png
+2025-05-23 14:30:41,426 [INFO] No ads found on this page
+2025-05-23 14:30:41,426 [INFO] Ad counts for i95Dev:
+2025-05-23 14:30:41,426 [INFO]   All time: 0
+2025-05-23 14:30:41,426 [INFO]   Last 30 days: 0
+2025-05-23 14:30:43,432 [INFO] Processing Innovapptive Inc (ID: 2842859)
+2025-05-23 14:30:43,432 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=2842859
+2025-05-23 14:30:57,732 [INFO] Screenshot saved to screenshots/ad_library_1747990857.png
+2025-05-23 14:30:57,732 [INFO] Screenshot saved to screenshots/ad_library_1747990857.png
+2025-05-23 14:30:57,751 [INFO] Found 80 ads (largest match)
+2025-05-23 14:30:57,752 [INFO] Navigating to https://www.linkedin.com/ad-library/search?companyIds=2842859&dateOption=last-30-days
+2025-05-23 14:31:11,481 [INFO] Screenshot saved to screenshots/ad_library_1747990870.png
+2025-05-23 14:31:11,481 [INFO] Screenshot saved to screenshots/ad_library_1747990870.png
+2025-05-23 14:31:11,493 [INFO] Found 6 ads (largest match)
+2025-05-23 14:31:11,493 [INFO] Ad counts for Innovapptive Inc:
+2025-05-23 14:31:11,493 [INFO]   All time: 80
+2025-05-23 14:31:11,493 [INFO]   Last 30 days: 6
+2025-05-23 14:31:14,007 [INFO] Updating Google Sheet with results
+2025-05-23 14:31:15,353 [INFO] Updated 9 rows with ad data
+2025-05-23 14:31:15,353 [INFO] Batch processing complete, immediately checking for more rows
+2025-05-23 14:31:15,353 [INFO] Checking for blank rows in Google Sheet...
+2025-05-23 14:31:16,150 [INFO] Found required columns: profileUrl=4, LI Ads?=5, 30 days=6, Overall=7
+2025-05-23 14:31:16,151 [INFO] Found 0 rows with blank values in the specified columns
+2025-05-23 14:31:16,151 [INFO] No blank rows found. Waiting for 30 seconds before checking again.
+2025-05-23 14:31:46,159 [INFO] Checking for blank rows in Google Sheet...
+2025-05-23 14:31:47,098 [INFO] Found required columns: profileUrl=4, LI Ads?=5, 30 days=6, Overall=7
+2025-05-23 14:31:47,098 [INFO] Found 0 rows with blank values in the specified columns
+2025-05-23 14:31:47,099 [INFO] No blank rows found. Waiting for 30 seconds before checking again.
+2025-05-23 14:32:17,105 [INFO] Checking for blank rows in Google Sheet...
+2025-05-23 14:32:17,995 [INFO] Found required columns: profileUrl=4, LI Ads?=5, 30 days=6, Overall=7
+2025-05-23 14:32:17,996 [INFO] Found 0 rows with blank values in the specified columns
+2025-05-23 14:32:17,996 [INFO] No blank rows found. Waiting for 30 seconds before checking again.

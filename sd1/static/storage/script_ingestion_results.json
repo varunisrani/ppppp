@@ -1,0 +1,1249 @@
+{
+  "parsed_data": {
+    "scenes": [
+      {
+        "scene_number": "1",
+        "location": {
+          "type": "EXT",
+          "place": "DESERTED HIGHWAY"
+        },
+        "time": "NIGHT",
+        "description": "A full moon hangs over an empty highway, with a solitary radio tent glowing under floodlights.",
+        "duration": "2",
+        "main_characters": [
+          "ELA"
+        ],
+        "technical_cues": [
+          "ANGLE ON tent\u2019s entrance",
+          "SOUND: Radio static"
+        ],
+        "department_notes": {
+          "props": [
+            "radio tent",
+            "floodlights"
+          ],
+          "lighting": [
+            "moonlight",
+            "floodlights"
+          ],
+          "sound": [
+            "radio static"
+          ],
+          "camera": [
+            "ANGLE ON",
+            "establishing shots"
+          ]
+        },
+        "dialogues": [],
+        "transitions": [
+          "CUT TO"
+        ]
+      },
+      {
+        "scene_number": "2",
+        "location": {
+          "type": "INT",
+          "place": "RADIO TENT"
+        },
+        "time": "CONTINUOUS",
+        "description": "Ela listens to radio static, noting down coordinates.",
+        "duration": "3",
+        "main_characters": [
+          "ELA",
+          "MARCUS (V.O.)"
+        ],
+        "technical_cues": [
+          "SOUND: Radio static",
+          "low light from lantern"
+        ],
+        "department_notes": {
+          "props": [
+            "radio equipment",
+            "lantern"
+          ],
+          "lighting": [
+            "dim lighting to create shadows"
+          ],
+          "sound": [
+            "radio static"
+          ],
+          "camera": [
+            "close-ups of Ela"
+          ]
+        },
+        "dialogues": [
+          {
+            "character": "ELA",
+            "line": "Command, do you copy? Over.",
+            "parenthetical": "(into mic)"
+          },
+          {
+            "character": "MARCUS (V.O.)",
+            "line": "\u2026help\u2026engine failure\u2026coordinates\u2026 Desolation Road\u2026",
+            "parenthetical": "(faint, urgent)"
+          },
+          {
+            "character": "ELA",
+            "line": "Got it. Stay calm. I\u2019ll send help.",
+            "parenthetical": "(softly)"
+          }
+        ],
+        "transitions": [
+          "CUT TO"
+        ]
+      },
+      {
+        "scene_number": "3",
+        "location": {
+          "type": "EXT",
+          "place": "CRASH SITE"
+        },
+        "time": "FLASHBACK",
+        "description": "A damaged spacecraft lies in the sand. Marcus is struggling inside.",
+        "duration": "3",
+        "main_characters": [
+          "MARCUS"
+        ],
+        "technical_cues": [
+          "SFX: Sparks",
+          "EXTREME CLOSE-UP"
+        ],
+        "department_notes": {
+          "props": [
+            "spacecraft"
+          ],
+          "lighting": [
+            "sparks for dramatic effect"
+          ],
+          "sound": [
+            "SFX: Sparks"
+          ],
+          "camera": [
+            "EXTREME CLOSE-UP"
+          ]
+        },
+        "dialogues": [
+          {
+            "character": "MARCUS",
+            "line": "Computer, status report.",
+            "parenthetical": "(groans)"
+          },
+          {
+            "character": "AI VOICE (O.S.)",
+            "line": "Life support at twenty-three percent. Engine integrity critical. Radio beacon offline."
+          },
+          {
+            "character": "MARCUS",
+            "line": "Then manually reboot comms. Now.",
+            "parenthetical": "(breathless)"
+          }
+        ],
+        "transitions": [
+          "CUT BACK TO"
+        ]
+      },
+      {
+        "scene_number": "4",
+        "location": {
+          "type": "EXT",
+          "place": "DESOLATION ROAD"
+        },
+        "time": "LATE NIGHT",
+        "description": "Sheriff Miller navigates to the crash site.",
+        "duration": "3",
+        "main_characters": [
+          "SHERIFF MILLER"
+        ],
+        "technical_cues": [
+          "moving vehicle shots"
+        ],
+        "department_notes": {
+          "props": [
+            "SUV",
+            "map"
+          ],
+          "lighting": [
+            "headlights"
+          ],
+          "sound": [
+            "engine sounds"
+          ],
+          "camera": [
+            "shots from inside the SUV"
+          ]
+        },
+        "dialogues": [
+          {
+            "character": "SHERIFF MILLER",
+            "line": "36.114, \u2013115.172\u2026 gotta be close.",
+            "parenthetical": "(muttering to himself)"
+          }
+        ],
+        "transitions": [
+          "DISSOLVE TO"
+        ]
+      },
+      {
+        "scene_number": "5",
+        "location": {
+          "type": "EXT",
+          "place": "CRASH SITE"
+        },
+        "time": "MOMENTS LATER",
+        "description": "Sheriff Miller arrives and helps Marcus. Ela joins them.",
+        "duration": "4",
+        "main_characters": [
+          "SHERIFF MILLER",
+          "MARCUS",
+          "ELA"
+        ],
+        "technical_cues": [
+          "spotlight effect"
+        ],
+        "department_notes": {
+          "props": [
+            "first-aid kit"
+          ],
+          "lighting": [
+            "spotlight"
+          ],
+          "sound": [
+            "breathing"
+          ],
+          "camera": [
+            "close-ups of characters"
+          ]
+        },
+        "dialogues": [
+          {
+            "character": "MARCUS",
+            "line": "You\u2026 you made it.",
+            "parenthetical": "(weak, coughing)"
+          },
+          {
+            "character": "SHERIFF MILLER",
+            "line": "Stay still. Medics are en route."
+          },
+          {
+            "character": "MARCUS",
+            "line": "Thank you\u2026 Ela."
+          },
+          {
+            "character": "ELA",
+            "line": "We\u2019ll get you out of here."
+          }
+        ],
+        "transitions": [
+          "CUT TO"
+        ]
+      },
+      {
+        "scene_number": "6",
+        "location": {
+          "type": "INT",
+          "place": "RADIO TENT"
+        },
+        "time": "DAWN",
+        "description": "Ela reflects on the night\u2019s events with Sheriff Miller.",
+        "duration": "3",
+        "main_characters": [
+          "ELA",
+          "SHERIFF MILLER"
+        ],
+        "technical_cues": [
+          "soft lighting from sunrise"
+        ],
+        "department_notes": {
+          "props": [
+            "photo of Marcus"
+          ],
+          "lighting": [
+            "soft sunrise lighting"
+          ],
+          "sound": [
+            "soft radio bleep"
+          ],
+          "camera": [
+            "medium shots of characters"
+          ]
+        },
+        "dialogues": [
+          {
+            "character": "SHERIFF MILLER",
+            "line": "He made it through the night."
+          },
+          {
+            "character": "ELA",
+            "line": "Thanks to you all."
+          }
+        ],
+        "transitions": [
+          "FADE OUT"
+        ]
+      }
+    ],
+    "timeline": {
+      "total_duration": "0:18:00",
+      "scene_breakdown": [
+        {
+          "scene_number": "1",
+          "start_time": "0:00:00",
+          "end_time": "0:02:00",
+          "duration_minutes": 2,
+          "location": "DESERTED HIGHWAY",
+          "characters": [],
+          "technical_complexity": 2,
+          "setup_time": 31
+        },
+        {
+          "scene_number": "2",
+          "start_time": "0:02:00",
+          "end_time": "0:05:00",
+          "duration_minutes": 3,
+          "location": "RADIO TENT",
+          "characters": [
+            "MARCUS (V.O.)",
+            "ELA"
+          ],
+          "technical_complexity": 2,
+          "setup_time": 25
+        },
+        {
+          "scene_number": "3",
+          "start_time": "0:05:00",
+          "end_time": "0:08:00",
+          "duration_minutes": 3,
+          "location": "CRASH SITE",
+          "characters": [
+            "MARCUS",
+            "AI VOICE (O.S.)"
+          ],
+          "technical_complexity": 2,
+          "setup_time": 22
+        },
+        {
+          "scene_number": "4",
+          "start_time": "0:08:00",
+          "end_time": "0:11:00",
+          "duration_minutes": 3,
+          "location": "DESOLATION ROAD",
+          "characters": [
+            "SHERIFF MILLER"
+          ],
+          "technical_complexity": 1,
+          "setup_time": 20
+        },
+        {
+          "scene_number": "5",
+          "start_time": "0:11:00",
+          "end_time": "0:15:00",
+          "duration_minutes": 4,
+          "location": "CRASH SITE",
+          "characters": [
+            "MARCUS",
+            "SHERIFF MILLER",
+            "ELA"
+          ],
+          "technical_complexity": 1,
+          "setup_time": 17
+        },
+        {
+          "scene_number": "6",
+          "start_time": "0:15:00",
+          "end_time": "0:18:00",
+          "duration_minutes": 3,
+          "location": "RADIO TENT",
+          "characters": [
+            "SHERIFF MILLER",
+            "ELA"
+          ],
+          "technical_complexity": 1,
+          "setup_time": 17
+        }
+      ],
+      "average_scene_duration": 3.0
+    },
+    "formatted_text": "SCRIPT TIMELINE\nTotal Duration: 0:18:00\nTotal Scenes: 6\n\n\n================================================================================\n\nSCENE 1\nEXT. DESERTED HIGHWAY - NIGHT\n--------------------------------------------------------------------------------\n\nEstimated Duration: 2\n\nDescription:\nA full moon hangs over an empty highway, with a solitary radio tent glowing under floodlights.\n\nMain Characters: ELA\n\nTechnical Cues:\n  - ANGLE ON tent\u2019s entrance\n  - SOUND: Radio static\n\nDepartment Notes:\n  PROPS:\n    - radio tent\n    - floodlights\n  LIGHTING:\n    - moonlight\n    - floodlights\n  SOUND:\n    - radio static\n  CAMERA:\n    - ANGLE ON\n    - establishing shots\n\n\nTransitions: CUT TO\n\n================================================================================\n\nSCENE 2\nINT. RADIO TENT - CONTINUOUS\n--------------------------------------------------------------------------------\n\nEstimated Duration: 3\n\nDescription:\nEla listens to radio static, noting down coordinates.\n\nMain Characters: ELA, MARCUS (V.O.)\n\nTechnical Cues:\n  - SOUND: Radio static\n  - low light from lantern\n\nDepartment Notes:\n  PROPS:\n    - radio equipment\n    - lantern\n  LIGHTING:\n    - dim lighting to create shadows\n  SOUND:\n    - radio static\n  CAMERA:\n    - close-ups of Ela\n\n\nDialogue:\nELA (into mic)\n    \"Command, do you copy? Over.\"\n\nMARCUS (V.O.) (faint, urgent)\n    \"\u2026help\u2026engine failure\u2026coordinates\u2026 Desolation Road\u2026\"\n\nELA (softly)\n    \"Got it. Stay calm. I\u2019ll send help.\"\n\n\nTransitions: CUT TO\n\n================================================================================\n\nSCENE 3\nEXT. CRASH SITE - FLASHBACK\n--------------------------------------------------------------------------------\n\nEstimated Duration: 3\n\nDescription:\nA damaged spacecraft lies in the sand. Marcus is struggling inside.\n\nMain Characters: MARCUS\n\nTechnical Cues:\n  - SFX: Sparks\n  - EXTREME CLOSE-UP\n\nDepartment Notes:\n  PROPS:\n    - spacecraft\n  LIGHTING:\n    - sparks for dramatic effect\n  SOUND:\n    - SFX: Sparks\n  CAMERA:\n    - EXTREME CLOSE-UP\n\n\nDialogue:\nMARCUS (groans)\n    \"Computer, status report.\"\n\nAI VOICE (O.S.)\n    \"Life support at twenty-three percent. Engine integrity critical. Radio beacon offline.\"\n\nMARCUS (breathless)\n    \"Then manually reboot comms. Now.\"\n\n\nTransitions: CUT BACK TO\n\n================================================================================\n\nSCENE 4\nEXT. DESOLATION ROAD - LATE NIGHT\n--------------------------------------------------------------------------------\n\nEstimated Duration: 3\n\nDescription:\nSheriff Miller navigates to the crash site.\n\nMain Characters: SHERIFF MILLER\n\nTechnical Cues:\n  - moving vehicle shots\n\nDepartment Notes:\n  PROPS:\n    - SUV\n    - map\n  LIGHTING:\n    - headlights\n  SOUND:\n    - engine sounds\n  CAMERA:\n    - shots from inside the SUV\n\n\nDialogue:\nSHERIFF MILLER (muttering to himself)\n    \"36.114, \u2013115.172\u2026 gotta be close.\"\n\n\nTransitions: DISSOLVE TO\n\n================================================================================\n\nSCENE 5\nEXT. CRASH SITE - MOMENTS LATER\n--------------------------------------------------------------------------------\n\nEstimated Duration: 4\n\nDescription:\nSheriff Miller arrives and helps Marcus. Ela joins them.\n\nMain Characters: SHERIFF MILLER, MARCUS, ELA\n\nTechnical Cues:\n  - spotlight effect\n\nDepartment Notes:\n  PROPS:\n    - first-aid kit\n  LIGHTING:\n    - spotlight\n  SOUND:\n    - breathing\n  CAMERA:\n    - close-ups of characters\n\n\nDialogue:\nMARCUS (weak, coughing)\n    \"You\u2026 you made it.\"\n\nSHERIFF MILLER\n    \"Stay still. Medics are en route.\"\n\nMARCUS\n    \"Thank you\u2026 Ela.\"\n\nELA\n    \"We\u2019ll get you out of here.\"\n\n\nTransitions: CUT TO\n\n================================================================================\n\nSCENE 6\nINT. RADIO TENT - DAWN\n--------------------------------------------------------------------------------\n\nEstimated Duration: 3\n\nDescription:\nEla reflects on the night\u2019s events with Sheriff Miller.\n\nMain Characters: ELA, SHERIFF MILLER\n\nTechnical Cues:\n  - soft lighting from sunrise\n\nDepartment Notes:\n  PROPS:\n    - photo of Marcus\n  LIGHTING:\n    - soft sunrise lighting\n  SOUND:\n    - soft radio bleep\n  CAMERA:\n    - medium shots of characters\n\n\nDialogue:\nSHERIFF MILLER\n    \"He made it through the night.\"\n\nELA\n    \"Thanks to you all.\"\n\n\nTransitions: FADE OUT"
+  },
+  "metadata": {
+    "timestamp": "2025-04-26 21:16:48",
+    "scene_metadata": [
+      {
+        "scene_number": "1",
+        "mood": "Eerie and solitary",
+        "lighting": {
+          "type": "artificial",
+          "requirements": [
+            "floodlights",
+            "natural moonlight"
+          ],
+          "special_effects": []
+        },
+        "time_details": {
+          "time_of_day": "Night",
+          "duration": "2 minutes"
+        },
+        "weather": {
+          "conditions": [],
+          "effects_needed": []
+        },
+        "props": {
+          "set_dressing": [
+            "radio tent"
+          ],
+          "hand_props": [],
+          "special_items": [
+            "floodlights"
+          ]
+        },
+        "technical": {
+          "camera": [
+            "ANGLE ON tent's entrance",
+            "establishing shots"
+          ],
+          "sound": [
+            "radio static"
+          ],
+          "special_equipment": []
+        },
+        "department_notes": {
+          "props": [
+            "radio tent",
+            "floodlights"
+          ],
+          "lighting": [
+            "moonlight",
+            "floodlights"
+          ],
+          "sound": [
+            "radio static"
+          ],
+          "camera": [
+            "ANGLE ON",
+            "establishing shots"
+          ]
+        }
+      },
+      {
+        "scene_number": "2",
+        "mood": "Tense and suspenseful",
+        "lighting": {
+          "type": "dim",
+          "requirements": [
+            "lantern light"
+          ],
+          "special_effects": []
+        },
+        "time_details": {
+          "time_of_day": "Continuous",
+          "duration": "3 minutes"
+        },
+        "weather": {
+          "conditions": [],
+          "effects_needed": []
+        },
+        "props": {
+          "set_dressing": [
+            "radio equipment"
+          ],
+          "hand_props": [
+            "lantern"
+          ],
+          "special_items": []
+        },
+        "technical": {
+          "camera": [
+            "close-ups of Ela"
+          ],
+          "sound": [
+            "radio static"
+          ],
+          "special_equipment": []
+        },
+        "department_notes": {
+          "props": [
+            "radio equipment",
+            "lantern"
+          ],
+          "lighting": [
+            "dim lighting to create shadows"
+          ],
+          "sound": [
+            "radio static"
+          ],
+          "camera": [
+            "close-ups of Ela"
+          ]
+        }
+      },
+      {
+        "scene_number": "3",
+        "mood": "Intense and dramatic",
+        "lighting": {
+          "type": "natural",
+          "requirements": [
+            "sparks for dramatic effect"
+          ],
+          "special_effects": []
+        },
+        "time_details": {
+          "time_of_day": "Flashback",
+          "duration": "3 minutes"
+        },
+        "weather": {
+          "conditions": [],
+          "effects_needed": []
+        },
+        "props": {
+          "set_dressing": [],
+          "hand_props": [],
+          "special_items": [
+            "spacecraft"
+          ]
+        },
+        "technical": {
+          "camera": [
+            "EXTREME CLOSE-UP"
+          ],
+          "sound": [
+            "SFX: Sparks"
+          ],
+          "special_equipment": []
+        },
+        "department_notes": {
+          "props": [
+            "spacecraft"
+          ],
+          "lighting": [
+            "sparks for dramatic effect"
+          ],
+          "sound": [
+            "SFX: Sparks"
+          ],
+          "camera": [
+            "EXTREME CLOSE-UP"
+          ]
+        }
+      },
+      {
+        "scene_number": "4",
+        "mood": "Focused and determined",
+        "lighting": {
+          "type": "natural",
+          "requirements": [
+            "headlights"
+          ],
+          "special_effects": []
+        },
+        "time_details": {
+          "time_of_day": "Late Night",
+          "duration": "3 minutes"
+        },
+        "weather": {
+          "conditions": [],
+          "effects_needed": []
+        },
+        "props": {
+          "set_dressing": [
+            "map"
+          ],
+          "hand_props": [
+            "SUV"
+          ],
+          "special_items": []
+        },
+        "technical": {
+          "camera": [
+            "shots from inside the SUV"
+          ],
+          "sound": [
+            "engine sounds"
+          ],
+          "special_equipment": []
+        },
+        "department_notes": {
+          "props": [
+            "SUV",
+            "map"
+          ],
+          "lighting": [
+            "headlights"
+          ],
+          "sound": [
+            "engine sounds"
+          ],
+          "camera": [
+            "shots from inside the SUV"
+          ]
+        }
+      },
+      {
+        "scene_number": "5",
+        "mood": "Hopeful and collaborative",
+        "lighting": {
+          "type": "artificial",
+          "requirements": [
+            "spotlight"
+          ],
+          "special_effects": []
+        },
+        "time_details": {
+          "time_of_day": "Moments Later",
+          "duration": "4 minutes"
+        },
+        "weather": {
+          "conditions": [],
+          "effects_needed": []
+        },
+        "props": {
+          "set_dressing": [],
+          "hand_props": [
+            "first-aid kit"
+          ],
+          "special_items": []
+        },
+        "technical": {
+          "camera": [
+            "close-ups of characters"
+          ],
+          "sound": [
+            "breathing"
+          ],
+          "special_equipment": []
+        },
+        "department_notes": {
+          "props": [
+            "first-aid kit"
+          ],
+          "lighting": [
+            "spotlight"
+          ],
+          "sound": [
+            "breathing"
+          ],
+          "camera": [
+            "close-ups of characters"
+          ]
+        }
+      },
+      {
+        "scene_number": "6",
+        "mood": "Reflective and serene",
+        "lighting": {
+          "type": "natural",
+          "requirements": [
+            "soft sunrise lighting"
+          ],
+          "special_effects": []
+        },
+        "time_details": {
+          "time_of_day": "Dawn",
+          "duration": "3 minutes"
+        },
+        "weather": {
+          "conditions": [],
+          "effects_needed": []
+        },
+        "props": {
+          "set_dressing": [],
+          "hand_props": [
+            "photo of Marcus"
+          ],
+          "special_items": []
+        },
+        "technical": {
+          "camera": [
+            "medium shots of characters"
+          ],
+          "sound": [
+            "soft radio bleep"
+          ],
+          "special_equipment": []
+        },
+        "department_notes": {
+          "props": [
+            "photo of Marcus"
+          ],
+          "lighting": [
+            "soft sunrise lighting"
+          ],
+          "sound": [
+            "soft radio bleep"
+          ],
+          "camera": [
+            "medium shots of characters"
+          ]
+        }
+      }
+    ],
+    "global_requirements": {
+      "equipment": [
+        "floodlights",
+        "lantern"
+      ],
+      "props": [
+        "radio tent",
+        "radio equipment",
+        "spacecraft",
+        "SUV",
+        "first-aid kit"
+      ],
+      "special_effects": [
+        "sparks for dramatic effect",
+        "spotlight effect"
+      ]
+    },
+    "statistics": {
+      "total_scenes": 6,
+      "total_pages": 0.0,
+      "estimated_runtime": "00:18:00",
+      "total_cast": 0,
+      "unique_locations": 1,
+      "scene_statistics": {
+        "average_duration": 3.0,
+        "shortest_scene": 2,
+        "longest_scene": 4,
+        "total_duration": 18
+      }
+    },
+    "color_coding": {
+      "location_colors": {},
+      "time_colors": {
+        "DAY": "#FFD700",
+        "NIGHT": "#191970",
+        "DAWN": "#FFA07A",
+        "DUSK": "#483D8B",
+        "MORNING": "#87CEEB",
+        "EVENING": "#4B0082"
+      },
+      "department_colors": {
+        "PROPS": "#FF4500",
+        "LIGHTING": "#FFD700",
+        "SOUND": "#4169E1",
+        "CAMERA": "#32CD32",
+        "MAKEUP": "#FF69B4",
+        "WARDROBE": "#8A2BE2"
+      }
+    },
+    "formatted_text": "Analysis Timestamp: 2025-04-26 21:16:48\n\nScript Statistics:\nTotal Scenes: 6\nPage Count: 0.0\nEstimated Runtime: 00:18:00\nCast Size: 0\nUnique Locations: 1\n\n\n================================================================================\nSCENE 1 - TECHNICAL BREAKDOWN\n--------------------------------------------------------------------------------\n\nMood: Eerie and solitary\n\nLighting:\n  Type: artificial\n  Requirements: floodlights, natural moonlight\n  Special Effects: \n\nTime Details:\n  Time of Day: Night\n  Duration: 2 minutes\n\nWeather:\n  Conditions: \n  Effects Needed: \n\nProps:\n  Set Dressing: radio tent\n  Hand Props: \n  Special Items: floodlights\n\nTechnical Requirements:\n  Camera: ANGLE ON tent's entrance, establishing shots\n  Sound: radio static\n  Special Equipment: \n\n\n================================================================================\nSCENE 2 - TECHNICAL BREAKDOWN\n--------------------------------------------------------------------------------\n\nMood: Tense and suspenseful\n\nLighting:\n  Type: dim\n  Requirements: lantern light\n  Special Effects: \n\nTime Details:\n  Time of Day: Continuous\n  Duration: 3 minutes\n\nWeather:\n  Conditions: \n  Effects Needed: \n\nProps:\n  Set Dressing: radio equipment\n  Hand Props: lantern\n  Special Items: \n\nTechnical Requirements:\n  Camera: close-ups of Ela\n  Sound: radio static\n  Special Equipment: \n\n\n================================================================================\nSCENE 3 - TECHNICAL BREAKDOWN\n--------------------------------------------------------------------------------\n\nMood: Intense and dramatic\n\nLighting:\n  Type: natural\n  Requirements: sparks for dramatic effect\n  Special Effects: \n\nTime Details:\n  Time of Day: Flashback\n  Duration: 3 minutes\n\nWeather:\n  Conditions: \n  Effects Needed: \n\nProps:\n  Set Dressing: \n  Hand Props: \n  Special Items: spacecraft\n\nTechnical Requirements:\n  Camera: EXTREME CLOSE-UP\n  Sound: SFX: Sparks\n  Special Equipment: \n\n\n================================================================================\nSCENE 4 - TECHNICAL BREAKDOWN\n--------------------------------------------------------------------------------\n\nMood: Focused and determined\n\nLighting:\n  Type: natural\n  Requirements: headlights\n  Special Effects: \n\nTime Details:\n  Time of Day: Late Night\n  Duration: 3 minutes\n\nWeather:\n  Conditions: \n  Effects Needed: \n\nProps:\n  Set Dressing: map\n  Hand Props: SUV\n  Special Items: \n\nTechnical Requirements:\n  Camera: shots from inside the SUV\n  Sound: engine sounds\n  Special Equipment: \n\n\n================================================================================\nSCENE 5 - TECHNICAL BREAKDOWN\n--------------------------------------------------------------------------------\n\nMood: Hopeful and collaborative\n\nLighting:\n  Type: artificial\n  Requirements: spotlight\n  Special Effects: \n\nTime Details:\n  Time of Day: Moments Later\n  Duration: 4 minutes\n\nWeather:\n  Conditions: \n  Effects Needed: \n\nProps:\n  Set Dressing: \n  Hand Props: first-aid kit\n  Special Items: \n\nTechnical Requirements:\n  Camera: close-ups of characters\n  Sound: breathing\n  Special Equipment: \n\n\n================================================================================\nSCENE 6 - TECHNICAL BREAKDOWN\n--------------------------------------------------------------------------------\n\nMood: Reflective and serene\n\nLighting:\n  Type: natural\n  Requirements: soft sunrise lighting\n  Special Effects: \n\nTime Details:\n  Time of Day: Dawn\n  Duration: 3 minutes\n\nWeather:\n  Conditions: \n  Effects Needed: \n\nProps:\n  Set Dressing: \n  Hand Props: photo of Marcus\n  Special Items: \n\nTechnical Requirements:\n  Camera: medium shots of characters\n  Sound: soft radio bleep\n  Special Equipment: \n\n\n================================================================================\nGLOBAL REQUIREMENTS\n--------------------------------------------------------------------------------\n\nEquipment: floodlights, lantern\nProps: radio tent, radio equipment, spacecraft, SUV, first-aid kit\nSpecial Effects: sparks for dramatic effect, spotlight effect"
+  },
+  "validation": {
+    "is_valid": false,
+    "validation_report": {
+      "is_valid": false,
+      "issues": [
+        {
+          "type": "warning",
+          "category": "continuity",
+          "scene_number": "2",
+          "description": "Time transition from 'NIGHT' in Scene 1 to 'CONTINUOUS' in Scene 2 should be explicitly defined in non-linear flashback settings.",
+          "suggestion": "Clarify the timeline connection between Scenes 1 and 2."
+        },
+        {
+          "type": "warning",
+          "category": "continuity",
+          "scene_number": "5",
+          "description": "'MOMENTS LATER' following a 'FLASHBACK' in Scene 3 may create confusion without clear timeline context.",
+          "suggestion": "Provide clearer timeline indicators for audience understanding."
+        }
+      ],
+      "scene_validations": [
+        {
+          "scene_number": "1",
+          "checks": [
+            {
+              "check_name": "Scene Number Consistency",
+              "status": "pass",
+              "details": "Scene number is consistent."
+            },
+            {
+              "check_name": "Technical Completeness",
+              "status": "pass",
+              "details": "All required technical details are complete."
+            }
+          ]
+        },
+        {
+          "scene_number": "2",
+          "checks": [
+            {
+              "check_name": "Scene Number Consistency",
+              "status": "pass",
+              "details": "Scene number is consistent."
+            },
+            {
+              "check_name": "Continuity Check",
+              "status": "fail",
+              "details": "Unclear transition from 'NIGHT' to 'CONTINUOUS'."
+            }
+          ]
+        },
+        {
+          "scene_number": "3",
+          "checks": [
+            {
+              "check_name": "Scene Number Consistency",
+              "status": "pass",
+              "details": "Scene number is consistent."
+            },
+            {
+              "check_name": "Technical Completeness",
+              "status": "pass",
+              "details": "All required technical details are complete."
+            }
+          ]
+        },
+        {
+          "scene_number": "4",
+          "checks": [
+            {
+              "check_name": "Scene Number Consistency",
+              "status": "pass",
+              "details": "Scene number is consistent."
+            },
+            {
+              "check_name": "Technical Completeness",
+              "status": "pass",
+              "details": "All required technical details are complete."
+            }
+          ]
+        },
+        {
+          "scene_number": "5",
+          "checks": [
+            {
+              "check_name": "Scene Number Consistency",
+              "status": "pass",
+              "details": "Scene number is consistent."
+            },
+            {
+              "check_name": "Continuity Check",
+              "status": "fail",
+              "details": "Ambiguous timing reference as 'MOMENTS LATER' from a 'FLASHBACK'."
+            }
+          ]
+        },
+        {
+          "scene_number": "6",
+          "checks": [
+            {
+              "check_name": "Scene Number Consistency",
+              "status": "pass",
+              "details": "Scene number is consistent."
+            },
+            {
+              "check_name": "Technical Completeness",
+              "status": "pass",
+              "details": "All required technical details are complete."
+            }
+          ]
+        }
+      ],
+      "metadata_validation": {
+        "smpte_compliance": true,
+        "missing_fields": [],
+        "warnings": []
+      },
+      "timeline_validation": {
+        "is_valid": false,
+        "continuity_issues": [],
+        "duration_issues": [
+          "Total duration mismatch: reported 0:18:00 vs calculated 0:18:00"
+        ],
+        "pacing_analysis": {
+          "scene_pacing": [
+            "FAST",
+            "MEDIUM",
+            "MEDIUM",
+            "MEDIUM",
+            "MEDIUM",
+            "MEDIUM"
+          ],
+          "suggestions": []
+        }
+      },
+      "technical_validation": {
+        "complex_elements": [],
+        "department_conflicts": [
+          {
+            "scene_number": "1",
+            "conflict": "Props and camera movement may interfere"
+          },
+          {
+            "scene_number": "2",
+            "conflict": "Props and camera movement may interfere"
+          },
+          {
+            "scene_number": "3",
+            "conflict": "Props and camera movement may interfere"
+          },
+          {
+            "scene_number": "4",
+            "conflict": "Props and camera movement may interfere"
+          },
+          {
+            "scene_number": "5",
+            "conflict": "Props and camera movement may interfere"
+          },
+          {
+            "scene_number": "6",
+            "conflict": "Props and camera movement may interfere"
+          }
+        ],
+        "resource_requirements": [
+          {
+            "scene_number": "1",
+            "department": "props",
+            "requirements": [
+              "radio tent",
+              "floodlights"
+            ]
+          },
+          {
+            "scene_number": "1",
+            "department": "lighting",
+            "requirements": [
+              "moonlight",
+              "floodlights"
+            ]
+          },
+          {
+            "scene_number": "1",
+            "department": "sound",
+            "requirements": [
+              "radio static"
+            ]
+          },
+          {
+            "scene_number": "1",
+            "department": "camera",
+            "requirements": [
+              "ANGLE ON",
+              "establishing shots"
+            ]
+          },
+          {
+            "scene_number": "2",
+            "department": "props",
+            "requirements": [
+              "radio equipment",
+              "lantern"
+            ]
+          },
+          {
+            "scene_number": "2",
+            "department": "lighting",
+            "requirements": [
+              "dim lighting to create shadows"
+            ]
+          },
+          {
+            "scene_number": "2",
+            "department": "sound",
+            "requirements": [
+              "radio static"
+            ]
+          },
+          {
+            "scene_number": "2",
+            "department": "camera",
+            "requirements": [
+              "close-ups of Ela"
+            ]
+          },
+          {
+            "scene_number": "3",
+            "department": "props",
+            "requirements": [
+              "spacecraft"
+            ]
+          },
+          {
+            "scene_number": "3",
+            "department": "lighting",
+            "requirements": [
+              "sparks for dramatic effect"
+            ]
+          },
+          {
+            "scene_number": "3",
+            "department": "sound",
+            "requirements": [
+              "SFX: Sparks"
+            ]
+          },
+          {
+            "scene_number": "3",
+            "department": "camera",
+            "requirements": [
+              "EXTREME CLOSE-UP"
+            ]
+          },
+          {
+            "scene_number": "4",
+            "department": "props",
+            "requirements": [
+              "SUV",
+              "map"
+            ]
+          },
+          {
+            "scene_number": "4",
+            "department": "lighting",
+            "requirements": [
+              "headlights"
+            ]
+          },
+          {
+            "scene_number": "4",
+            "department": "sound",
+            "requirements": [
+              "engine sounds"
+            ]
+          },
+          {
+            "scene_number": "4",
+            "department": "camera",
+            "requirements": [
+              "shots from inside the SUV"
+            ]
+          },
+          {
+            "scene_number": "5",
+            "department": "props",
+            "requirements": [
+              "first-aid kit"
+            ]
+          },
+          {
+            "scene_number": "5",
+            "department": "lighting",
+            "requirements": [
+              "spotlight"
+            ]
+          },
+          {
+            "scene_number": "5",
+            "department": "sound",
+            "requirements": [
+              "breathing"
+            ]
+          },
+          {
+            "scene_number": "5",
+            "department": "camera",
+            "requirements": [
+              "close-ups of characters"
+            ]
+          },
+          {
+            "scene_number": "6",
+            "department": "props",
+            "requirements": [
+              "photo of Marcus"
+            ]
+          },
+          {
+            "scene_number": "6",
+            "department": "lighting",
+            "requirements": [
+              "soft sunrise lighting"
+            ]
+          },
+          {
+            "scene_number": "6",
+            "department": "sound",
+            "requirements": [
+              "soft radio bleep"
+            ]
+          },
+          {
+            "scene_number": "6",
+            "department": "camera",
+            "requirements": [
+              "medium shots of characters"
+            ]
+          }
+        ]
+      },
+      "summary": {
+        "total_scenes": 6,
+        "valid_scenes": 6,
+        "scenes_with_issues": 2,
+        "total_issues": 2
+      },
+      "formatted_text": "\n================================================================================\nVALIDATION REPORT - FAILED\n--------------------------------------------------------------------------------\n\n\nTIMELINE VALIDATION:\nStatus: FAIL\n\nTECHNICAL VALIDATION:\n\nDepartment Conflicts:\n  Scene 1:\n    Props and camera movement may interfere\n  Scene 2:\n    Props and camera movement may interfere\n  Scene 3:\n    Props and camera movement may interfere\n  Scene 4:\n    Props and camera movement may interfere\n  Scene 5:\n    Props and camera movement may interfere\n  Scene 6:\n    Props and camera movement may interfere\n\nISSUES FOUND:\n\nType: warning\nCategory: continuity\nScene: 2\nDescription: Time transition from 'NIGHT' in Scene 1 to 'CONTINUOUS' in Scene 2 should be explicitly defined in non-linear flashback settings.\nSuggestion: Clarify the timeline connection between Scenes 1 and 2.\n\n\nType: warning\nCategory: continuity\nScene: 5\nDescription: 'MOMENTS LATER' following a 'FLASHBACK' in Scene 3 may create confusion without clear timeline context.\nSuggestion: Provide clearer timeline indicators for audience understanding.\n\n\n================================================================================\nSCENE VALIDATIONS\n--------------------------------------------------------------------------------\n\n\nSCENE 1:\n  \u2713 Scene Number Consistency: Scene number is consistent.\n  \u2713 Technical Completeness: All required technical details are complete.\n\nSCENE 2:\n  \u2713 Scene Number Consistency: Scene number is consistent.\n  \u2717 Continuity Check: Unclear transition from 'NIGHT' to 'CONTINUOUS'.\n\nSCENE 3:\n  \u2713 Scene Number Consistency: Scene number is consistent.\n  \u2713 Technical Completeness: All required technical details are complete.\n\nSCENE 4:\n  \u2713 Scene Number Consistency: Scene number is consistent.\n  \u2713 Technical Completeness: All required technical details are complete.\n\nSCENE 5:\n  \u2713 Scene Number Consistency: Scene number is consistent.\n  \u2717 Continuity Check: Ambiguous timing reference as 'MOMENTS LATER' from a 'FLASHBACK'.\n\nSCENE 6:\n  \u2713 Scene Number Consistency: Scene number is consistent.\n  \u2713 Technical Completeness: All required technical details are complete.\n\n================================================================================\nMETADATA VALIDATION\n--------------------------------------------------------------------------------\n\nSMPTE Compliance: Yes\n\n================================================================================\nVALIDATION SUMMARY\n--------------------------------------------------------------------------------\nTotal Scenes: 6\nValid Scenes: 6\nScenes with Issues: 2\nTotal Issues: 2"
+    },
+    "formatted_text": "\n================================================================================\nVALIDATION REPORT - FAILED\n--------------------------------------------------------------------------------\n\n\nTIMELINE VALIDATION:\nStatus: FAIL\n\nTECHNICAL VALIDATION:\n\nDepartment Conflicts:\n  Scene 1:\n    Props and camera movement may interfere\n  Scene 2:\n    Props and camera movement may interfere\n  Scene 3:\n    Props and camera movement may interfere\n  Scene 4:\n    Props and camera movement may interfere\n  Scene 5:\n    Props and camera movement may interfere\n  Scene 6:\n    Props and camera movement may interfere\n\nISSUES FOUND:\n\nType: warning\nCategory: continuity\nScene: 2\nDescription: Time transition from 'NIGHT' in Scene 1 to 'CONTINUOUS' in Scene 2 should be explicitly defined in non-linear flashback settings.\nSuggestion: Clarify the timeline connection between Scenes 1 and 2.\n\n\nType: warning\nCategory: continuity\nScene: 5\nDescription: 'MOMENTS LATER' following a 'FLASHBACK' in Scene 3 may create confusion without clear timeline context.\nSuggestion: Provide clearer timeline indicators for audience understanding.\n\n\n================================================================================\nSCENE VALIDATIONS\n--------------------------------------------------------------------------------\n\n\nSCENE 1:\n  \u2713 Scene Number Consistency: Scene number is consistent.\n  \u2713 Technical Completeness: All required technical details are complete.\n\nSCENE 2:\n  \u2713 Scene Number Consistency: Scene number is consistent.\n  \u2717 Continuity Check: Unclear transition from 'NIGHT' to 'CONTINUOUS'.\n\nSCENE 3:\n  \u2713 Scene Number Consistency: Scene number is consistent.\n  \u2713 Technical Completeness: All required technical details are complete.\n\nSCENE 4:\n  \u2713 Scene Number Consistency: Scene number is consistent.\n  \u2713 Technical Completeness: All required technical details are complete.\n\nSCENE 5:\n  \u2713 Scene Number Consistency: Scene number is consistent.\n  \u2717 Continuity Check: Ambiguous timing reference as 'MOMENTS LATER' from a 'FLASHBACK'.\n\nSCENE 6:\n  \u2713 Scene Number Consistency: Scene number is consistent.\n  \u2713 Technical Completeness: All required technical details are complete.\n\n================================================================================\nMETADATA VALIDATION\n--------------------------------------------------------------------------------\n\nSMPTE Compliance: Yes\n\n================================================================================\nVALIDATION SUMMARY\n--------------------------------------------------------------------------------\nTotal Scenes: 6\nValid Scenes: 6\nScenes with Issues: 2\nTotal Issues: 2"
+  },
+  "processing_status": {
+    "started_at": "2025-04-26T21:16:33.079045",
+    "current_stage": "completed",
+    "completed_stages": [
+      {
+        "stage": "parsing",
+        "completed_at": "2025-04-26T21:16:48.638200",
+        "success": true
+      },
+      {
+        "stage": "metadata",
+        "completed_at": "2025-04-26T21:16:58.281123",
+        "success": true
+      },
+      {
+        "stage": "validation",
+        "completed_at": "2025-04-26T21:17:11.366064",
+        "success": true
+      }
+    ],
+    "errors": [],
+    "warnings": [
+      {
+        "type": "validation_warning",
+        "message": "Time transition from 'NIGHT' in Scene 1 to 'CONTINUOUS' in Scene 2 should be explicitly defined in non-linear flashback settings.",
+        "scene": "2",
+        "category": "continuity"
+      },
+      {
+        "type": "validation_warning",
+        "message": "'MOMENTS LATER' following a 'FLASHBACK' in Scene 3 may create confusion without clear timeline context.",
+        "scene": "5",
+        "category": "continuity"
+      }
+    ],
+    "completed_at": "2025-04-26T21:17:11.372824",
+    "duration": "0:00:38.293792"
+  },
+  "statistics": {
+    "total_scenes": 6,
+    "total_pages": 0.0,
+    "estimated_runtime": "00:18:00",
+    "total_cast": 0,
+    "unique_locations": 1,
+    "scene_statistics": {
+      "average_duration": 3.0,
+      "shortest_scene": 2,
+      "longest_scene": 4,
+      "total_duration": 18
+    },
+    "complex_scenes": 0,
+    "dialogue_heavy_scenes": 0,
+    "effects_required": 2
+  },
+  "ui_metadata": {
+    "color_coding": {
+      "location_colors": {},
+      "time_colors": {
+        "DAY": "#FFD700",
+        "NIGHT": "#191970",
+        "DAWN": "#FFA07A",
+        "DUSK": "#483D8B",
+        "MORNING": "#87CEEB",
+        "EVENING": "#4B0082"
+      },
+      "department_colors": {
+        "PROPS": "#FF4500",
+        "LIGHTING": "#FFD700",
+        "SOUND": "#4169E1",
+        "CAMERA": "#32CD32",
+        "MAKEUP": "#FF69B4",
+        "WARDROBE": "#8A2BE2"
+      }
+    },
+    "scene_complexity": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 1,
+      "5": 1,
+      "6": 1
+    },
+    "timeline_data": {
+      "total_duration": "0:18:00",
+      "scene_breakdown": [
+        {
+          "scene_number": "1",
+          "start_time": "0:00:00",
+          "end_time": "0:02:00",
+          "duration_minutes": 2,
+          "location": "DESERTED HIGHWAY",
+          "characters": [],
+          "technical_complexity": 2,
+          "setup_time": 31
+        },
+        {
+          "scene_number": "2",
+          "start_time": "0:02:00",
+          "end_time": "0:05:00",
+          "duration_minutes": 3,
+          "location": "RADIO TENT",
+          "characters": [
+            "MARCUS (V.O.)",
+            "ELA"
+          ],
+          "technical_complexity": 2,
+          "setup_time": 25
+        },
+        {
+          "scene_number": "3",
+          "start_time": "0:05:00",
+          "end_time": "0:08:00",
+          "duration_minutes": 3,
+          "location": "CRASH SITE",
+          "characters": [
+            "MARCUS",
+            "AI VOICE (O.S.)"
+          ],
+          "technical_complexity": 2,
+          "setup_time": 22
+        },
+        {
+          "scene_number": "4",
+          "start_time": "0:08:00",
+          "end_time": "0:11:00",
+          "duration_minutes": 3,
+          "location": "DESOLATION ROAD",
+          "characters": [
+            "SHERIFF MILLER"
+          ],
+          "technical_complexity": 1,
+          "setup_time": 20
+        },
+        {
+          "scene_number": "5",
+          "start_time": "0:11:00",
+          "end_time": "0:15:00",
+          "duration_minutes": 4,
+          "location": "CRASH SITE",
+          "characters": [
+            "MARCUS",
+            "SHERIFF MILLER",
+            "ELA"
+          ],
+          "technical_complexity": 1,
+          "setup_time": 17
+        },
+        {
+          "scene_number": "6",
+          "start_time": "0:15:00",
+          "end_time": "0:18:00",
+          "duration_minutes": 3,
+          "location": "RADIO TENT",
+          "characters": [
+            "SHERIFF MILLER",
+            "ELA"
+          ],
+          "technical_complexity": 1,
+          "setup_time": 17
+        }
+      ],
+      "average_scene_duration": 3.0
+    },
+    "department_views": {}
+  },
+  "saved_paths": {
+    "main": "data/scripts/script_20250426_211711.json",
+    "metadata": "data/scripts/metadata/metadata_20250426_211711.json",
+    "validation": "data/scripts/validation/validation_20250426_211711.json"
+  }
+}

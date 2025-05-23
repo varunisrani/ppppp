@@ -1,0 +1,51 @@
+# Core dependencies
+selenium
+webdriver-manager
+requests
+python-dotenv
+flask
+gunicorn
+
+# Google API dependencies
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+
+# Apify client
+apify-client
+
+# Utility packages
+typing-extensions
+python-dateutil
+
+# WebDriver management
+beautifulsoup4
+pandas
+
+# Data processing
+lxml
+html5lib
+regex
+
+# Utilities
+tqdm
+urllib3
+argparse
+
+# Output formatting
+tabulate
+openpyxl
+xlsxwriter
+
+# Streamlit UI
+streamlit
+watchdog
+
+# API Dependencies
+fastapi>=0.68.0
+uvicorn>=0.15.0
+pydantic>=1.8.0
+python-multipart
+aiofiles
+gunicorn

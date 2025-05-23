@@ -1,0 +1,52 @@
+# Core dependencies
+openai
+python-dotenv
+streamlit
+httpx
+httpx-sse
+starlette
+uvicorn
+
+# Data processing and analysis
+numpy
+pandas
+networkx
+geopy
+plotly
+qrcode
+
+# Visualization and UI
+openai-agents
+matplotlib
+altair
+pydeck
+pillow
+
+# PDF Generation
+fpdf
+
+# Utility libraries
+python-dateutil
+pytz
+typing-extensions
+pydantic
+attrs
+
+# File handling and system
+GitPython
+toml
+
+# Logging and monitoring
+logging
+cachetools
+
+# Development and testing
+black
+pytest
+pytest-asyncio
+
+# Optional dependencies
+colorama  # For colored terminal output
+tqdm      # For progress bars
+replicate
+google-generativeai

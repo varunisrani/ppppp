@@ -1,0 +1,110 @@
+{
+  "location_costs": {
+    "L1": {
+      "daily_rate": 2000.0,
+      "permit_costs": 300.0,
+      "additional_fees": [],
+      "total_days": 1,
+      "total_cost": 2078.7172011661805
+    },
+    "L2": {
+      "daily_rate": 2500.0,
+      "permit_costs": 400.0,
+      "additional_fees": [],
+      "total_days": 2,
+      "total_cost": 5241.98250728863
+    },
+    "L3": {
+      "daily_rate": 3000.0,
+      "permit_costs": 500.0,
+      "additional_fees": [],
+      "total_days": 2,
+      "total_cost": 6326.530612244897
+    },
+    "L4": {
+      "daily_rate": 1800.0,
+      "permit_costs": 250.0,
+      "additional_fees": [],
+      "total_days": 1,
+      "total_cost": 1852.7696793002915
+    }
+  },
+  "equipment_costs": {
+    "lighting": {
+      "items": [
+        "floodlights",
+        "lantern",
+        "spotlight"
+      ],
+      "rental_rates": {
+        "floodlights": 300.0,
+        "lantern": 100.0,
+        "spotlight": 250.0
+      },
+      "purchase_costs": {},
+      "insurance_costs": 500.0,
+      "total_cost": 2150.0
+    }
+  },
+  "personnel_costs": {
+    "director": {
+      "daily_rate": 3000.0,
+      "overtime_rate": 450.0,
+      "total_days": 3,
+      "benefits": 1000.0,
+      "total_cost": 9688.841201716737
+    },
+    "camera_operator": {
+      "daily_rate": 1500.0,
+      "overtime_rate": 225.0,
+      "total_days": 3,
+      "benefits": 500.0,
+      "total_cost": 4383.0472103004295
+    },
+    "sound_technician": {
+      "daily_rate": 1000.0,
+      "overtime_rate": 150.0,
+      "total_days": 3,
+      "benefits": 400.0,
+      "total_cost": 3414.1630901287554
+    },
+    "lighting_technician": {
+      "daily_rate": 1200.0,
+      "overtime_rate": 180.0,
+      "total_days": 3,
+      "benefits": 450.0,
+      "total_cost": 4013.9484978540772
+    }
+  },
+  "logistics_costs": {
+    "transportation": {
+      "rental_vehicle": 1500.0
+    },
+    "accommodation": {
+      "hotel": 3000.0
+    },
+    "catering": {
+      "meal_service": 1800.0
+    },
+    "misc_expenses": [
+      "fuel",
+      "parking fees"
+    ]
+  },
+  "insurance_costs": {
+    "type": 5000.0
+  },
+  "contingency": {
+    "percentage": 10.0,
+    "amount": 10000.0
+  },
+  "total_estimates": {
+    "total_location_costs": 15500.0,
+    "total_equipment_costs": 2150.0,
+    "total_personnel_costs": 21500.0,
+    "total_logistics_costs": 0,
+    "total_insurance_costs": 0,
+    "contingency_amount": 0,
+    "grand_total": 39150.0
+  }
+}

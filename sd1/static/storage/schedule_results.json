@@ -1,0 +1,1079 @@
+{
+  "location_plan": {
+    "locations": [
+      {
+        "id": "L1",
+        "name": "Deserted Highway",
+        "address": "Desert Highway, NV",
+        "latitude": null,
+        "longitude": null,
+        "scenes": [
+          "1"
+        ],
+        "requirements": [
+          "moonlight",
+          "floodlights"
+        ],
+        "setup_time_minutes": 120,
+        "wrap_time_minutes": 60
+      },
+      {
+        "id": "L2",
+        "name": "Radio Tent",
+        "address": "Tent Site, Desert Highway, NV",
+        "latitude": null,
+        "longitude": null,
+        "scenes": [
+          "2",
+          "6"
+        ],
+        "requirements": [
+          "dim lighting",
+          "lantern",
+          "sunrise lighting"
+        ],
+        "setup_time_minutes": 60,
+        "wrap_time_minutes": 45
+      },
+      {
+        "id": "L3",
+        "name": "Crash Site",
+        "address": "Crash Zone, Desert Highway, NV",
+        "latitude": null,
+        "longitude": null,
+        "scenes": [
+          "3",
+          "5"
+        ],
+        "requirements": [
+          "spacecraft",
+          "sparks"
+        ],
+        "setup_time_minutes": 180,
+        "wrap_time_minutes": 90
+      },
+      {
+        "id": "L4",
+        "name": "Desolation Road",
+        "address": "Desolation Road, NV",
+        "latitude": null,
+        "longitude": null,
+        "scenes": [
+          "4"
+        ],
+        "requirements": [
+          "SUV",
+          "headlights"
+        ],
+        "setup_time_minutes": 90,
+        "wrap_time_minutes": 60
+      }
+    ],
+    "location_groups": [
+      {
+        "group_id": "G1",
+        "locations": [
+          "L1",
+          "L2",
+          "L3"
+        ],
+        "reason": "All locations are within close proximity in desert setting"
+      }
+    ],
+    "weather_dependencies": {
+      "L1": {
+        "preferred_conditions": [
+          "clear",
+          "moonlit"
+        ],
+        "avoid_conditions": [
+          "rain",
+          "snow",
+          "high winds"
+        ],
+        "seasonal_notes": [
+          "Best shot during clear, dry nights"
+        ]
+      },
+      "L2": {
+        "preferred_conditions": [
+          "clear"
+        ],
+        "avoid_conditions": [
+          "rain"
+        ],
+        "seasonal_notes": [
+          "Soft sunrise lighting is optimal"
+        ]
+      },
+      "L3": {
+        "preferred_conditions": [
+          "overcast"
+        ],
+        "avoid_conditions": [
+          "rain",
+          "high winds"
+        ],
+        "seasonal_notes": [
+          "Sparks effect best in mild weather"
+        ]
+      },
+      "L4": {
+        "preferred_conditions": [
+          "clear"
+        ],
+        "avoid_conditions": [
+          "rain",
+          "high winds"
+        ],
+        "seasonal_notes": [
+          "Vehicle shots need stable weather"
+        ]
+      }
+    },
+    "daylight_requirements": {
+      "1": {
+        "needs_daylight": false,
+        "golden_hour": false,
+        "time_window": {
+          "start": "18:00",
+          "end": "06:00"
+        }
+      },
+      "2": {
+        "needs_daylight": false,
+        "golden_hour": false,
+        "time_window": {
+          "start": "18:00",
+          "end": "06:00"
+        }
+      },
+      "3": {
+        "needs_daylight": false,
+        "golden_hour": false,
+        "time_window": {
+          "start": "18:00",
+          "end": "06:00"
+        }
+      },
+      "4": {
+        "needs_daylight": false,
+        "golden_hour": false,
+        "time_window": {
+          "start": "18:00",
+          "end": "06:00"
+        }
+      },
+      "5": {
+        "needs_daylight": false,
+        "golden_hour": false,
+        "time_window": {
+          "start": "18:00",
+          "end": "06:00"
+        }
+      },
+      "6": {
+        "needs_daylight": true,
+        "golden_hour": true,
+        "time_window": {
+          "start": "05:00",
+          "end": "07:00"
+        }
+      }
+    },
+    "shooting_sequence": [
+      "L1",
+      "L4",
+      "L3",
+      "L2"
+    ],
+    "optimization_notes": [
+      "Grouped desert locations for nighttime shooting",
+      "Considered vehicle and proximity logistics for Desolation Road",
+      "Radio Tent scene to wrap at dawn for natural lighting"
+    ]
+  },
+  "crew_allocation": {
+    "crew_assignments": [
+      {
+        "crew_member": "Director",
+        "role": "Director",
+        "assigned_scenes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "work_hours": 12,
+        "turnaround_hours": 12,
+        "meal_break_interval": 6,
+        "equipment_assigned": [
+          "monitor",
+          "megaphone"
+        ]
+      },
+      {
+        "crew_member": "DP",
+        "role": "Director of Photography",
+        "assigned_scenes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "work_hours": 12,
+        "turnaround_hours": 12,
+        "meal_break_interval": 6,
+        "equipment_assigned": [
+          "camera1",
+          "camera2"
+        ]
+      },
+      {
+        "crew_member": "Sound Mixer",
+        "role": "Sound",
+        "assigned_scenes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "work_hours": 10,
+        "turnaround_hours": 10,
+        "meal_break_interval": 5,
+        "equipment_assigned": [
+          "sound_mixer",
+          "boom_mic"
+        ]
+      },
+      {
+        "crew_member": "Gaffer",
+        "role": "Lighting",
+        "assigned_scenes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "work_hours": 12,
+        "turnaround_hours": 12,
+        "meal_break_interval": 6,
+        "equipment_assigned": [
+          "floodlights",
+          "spotlight"
+        ]
+      },
+      {
+        "crew_member": "Key Grip",
+        "role": "Grip",
+        "assigned_scenes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "work_hours": 12,
+        "turnaround_hours": 12,
+        "meal_break_interval": 6,
+        "equipment_assigned": [
+          "rigging_gear"
+        ]
+      }
+    ],
+    "equipment_assignments": [
+      {
+        "equipment_id": "camera1",
+        "type": "camera",
+        "assigned_scenes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "setup_time_minutes": 30,
+        "assigned_crew": [
+          "DP"
+        ]
+      },
+      {
+        "equipment_id": "camera2",
+        "type": "camera",
+        "assigned_scenes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "setup_time_minutes": 30,
+        "assigned_crew": [
+          "DP"
+        ]
+      },
+      {
+        "equipment_id": "sound_mixer",
+        "type": "audio",
+        "assigned_scenes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "setup_time_minutes": 20,
+        "assigned_crew": [
+          "Sound Mixer"
+        ]
+      },
+      {
+        "equipment_id": "boom_mic",
+        "type": "audio",
+        "assigned_scenes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "setup_time_minutes": 20,
+        "assigned_crew": [
+          "Sound Mixer"
+        ]
+      },
+      {
+        "equipment_id": "floodlights",
+        "type": "lighting",
+        "assigned_scenes": [
+          "1",
+          "2"
+        ],
+        "setup_time_minutes": 45,
+        "assigned_crew": [
+          "Gaffer"
+        ]
+      },
+      {
+        "equipment_id": "spotlight",
+        "type": "lighting",
+        "assigned_scenes": [
+          "5"
+        ],
+        "setup_time_minutes": 30,
+        "assigned_crew": [
+          "Gaffer"
+        ]
+      },
+      {
+        "equipment_id": "rigging_gear",
+        "type": "grip",
+        "assigned_scenes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "setup_time_minutes": 40,
+        "assigned_crew": [
+          "Key Grip"
+        ]
+      }
+    ],
+    "department_schedules": {
+      "camera": {
+        "crew": [
+          "DP"
+        ],
+        "equipment": [
+          "camera1",
+          "camera2"
+        ],
+        "notes": [
+          "Ensure various shot angles",
+          "Use stabilizing gear for EXT scenes"
+        ]
+      },
+      "sound": {
+        "crew": [
+          "Sound Mixer"
+        ],
+        "equipment": [
+          "sound_mixer",
+          "boom_mic"
+        ],
+        "notes": [
+          "Sync with camera",
+          "Monitor radio static for consistency"
+        ]
+      }
+    },
+    "availability_windows": {
+      "crew_member_id": {
+        "available_dates": [
+          "2023-10-01",
+          "2023-10-02",
+          "2023-10-03"
+        ],
+        "daily_hours": {
+          "start": "08:00",
+          "end": "20:00"
+        },
+        "restrictions": [
+          "Union break every 6 hours"
+        ]
+      }
+    },
+    "resource_conflicts": [],
+    "allocation_notes": [
+      "All scenes require seamless transition of lighting gear.",
+      "Camera angles need to adapt to character positioning."
+    ]
+  },
+  "schedule": [
+    {
+      "day": 1,
+      "date": "2025-04-28",
+      "scenes": [
+        {
+          "scene_id": "1",
+          "start_time": "18:00",
+          "end_time": "20:00",
+          "location_id": "L1",
+          "crew_ids": [
+            "Director",
+            "DP",
+            "Sound Mixer",
+            "Gaffer",
+            "Key Grip"
+          ],
+          "equipment_ids": [
+            "camera1",
+            "camera2",
+            "sound_mixer",
+            "boom_mic",
+            "floodlights",
+            "rigging_gear"
+          ],
+          "setup_time": "16:00",
+          "wrap_time": "21:00",
+          "breaks": [
+            {
+              "type": "dinner",
+              "start_time": "20:00",
+              "end_time": "21:00"
+            }
+          ]
+        },
+        {
+          "scene_id": "4",
+          "start_time": "21:30",
+          "end_time": "23:30",
+          "location_id": "L4",
+          "crew_ids": [
+            "Director",
+            "DP",
+            "Sound Mixer",
+            "Gaffer",
+            "Key Grip"
+          ],
+          "equipment_ids": [
+            "camera1",
+            "camera2",
+            "sound_mixer",
+            "boom_mic",
+            "rigging_gear"
+          ],
+          "setup_time": "20:00",
+          "wrap_time": "00:00",
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2025-04-29",
+      "scenes": [
+        {
+          "scene_id": "3",
+          "start_time": "18:00",
+          "end_time": "20:00",
+          "location_id": "L3",
+          "crew_ids": [
+            "Director",
+            "DP",
+            "Sound Mixer",
+            "Gaffer",
+            "Key Grip"
+          ],
+          "equipment_ids": [
+            "camera1",
+            "camera2",
+            "sound_mixer",
+            "boom_mic",
+            "rigging_gear"
+          ],
+          "setup_time": "16:00",
+          "wrap_time": "21:00",
+          "breaks": [
+            {
+              "type": "dinner",
+              "start_time": "20:00",
+              "end_time": "21:00"
+            }
+          ]
+        },
+        {
+          "scene_id": "5",
+          "start_time": "21:30",
+          "end_time": "23:30",
+          "location_id": "L3",
+          "crew_ids": [
+            "Director",
+            "DP",
+            "Sound Mixer",
+            "Gaffer",
+            "Key Grip"
+          ],
+          "equipment_ids": [
+            "camera1",
+            "camera2",
+            "sound_mixer",
+            "boom_mic",
+            "spotlight",
+            "rigging_gear"
+          ],
+          "setup_time": "20:00",
+          "wrap_time": "00:00",
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2025-04-30",
+      "scenes": [
+        {
+          "scene_id": "2",
+          "start_time": "05:00",
+          "end_time": "08:00",
+          "location_id": "L2",
+          "crew_ids": [
+            "Director",
+            "DP",
+            "Sound Mixer",
+            "Gaffer",
+            "Key Grip"
+          ],
+          "equipment_ids": [
+            "camera1",
+            "camera2",
+            "sound_mixer",
+            "boom_mic",
+            "floodlights",
+            "rigging_gear"
+          ],
+          "setup_time": "04:00",
+          "wrap_time": "09:00",
+          "breaks": []
+        },
+        {
+          "scene_id": "6",
+          "start_time": "08:30",
+          "end_time": "11:30",
+          "location_id": "L2",
+          "crew_ids": [
+            "Director",
+            "DP",
+            "Sound Mixer",
+            "Gaffer",
+            "Key Grip"
+          ],
+          "equipment_ids": [
+            "camera1",
+            "camera2",
+            "sound_mixer",
+            "boom_mic",
+            "rigging_gear"
+          ],
+          "setup_time": "08:00",
+          "wrap_time": "12:00",
+          "breaks": [
+            {
+              "type": "breakfast",
+              "start_time": "07:00",
+              "end_time": "08:00"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "calendar_data": {
+    "events": [
+      {
+        "id": "E1",
+        "title": "Scene 1",
+        "start": "2025-04-28T18:00:00",
+        "end": "2025-04-28T20:00:00",
+        "resourceId": "L1",
+        "color": "#FFA07A",
+        "textColor": "#000000",
+        "description": "Shooting Scene 1 at Deserted Highway",
+        "location": "Deserted Highway, NV",
+        "crew": [
+          "Director",
+          "DP",
+          "Sound Mixer",
+          "Gaffer",
+          "Key Grip"
+        ],
+        "equipment": [
+          "camera1",
+          "camera2",
+          "sound_mixer",
+          "boom_mic",
+          "floodlights",
+          "rigging_gear"
+        ]
+      },
+      {
+        "id": "E2",
+        "title": "Scene 4",
+        "start": "2025-04-28T21:30:00",
+        "end": "2025-04-28T23:30:00",
+        "resourceId": "L4",
+        "color": "#20B2AA",
+        "textColor": "#FFFFFF",
+        "description": "Shooting Scene 4 at Desolation Road",
+        "location": "Desolation Road, NV",
+        "crew": [
+          "Director",
+          "DP",
+          "Sound Mixer",
+          "Gaffer",
+          "Key Grip"
+        ],
+        "equipment": [
+          "camera1",
+          "camera2",
+          "sound_mixer",
+          "boom_mic",
+          "rigging_gear"
+        ]
+      },
+      {
+        "id": "E3",
+        "title": "Scene 3",
+        "start": "2025-04-29T18:00:00",
+        "end": "2025-04-29T20:00:00",
+        "resourceId": "L3",
+        "color": "#FF6347",
+        "textColor": "#000000",
+        "description": "Shooting Scene 3 at Crash Site",
+        "location": "Crash Zone, Desert Highway, NV",
+        "crew": [
+          "Director",
+          "DP",
+          "Sound Mixer",
+          "Gaffer",
+          "Key Grip"
+        ],
+        "equipment": [
+          "camera1",
+          "camera2",
+          "sound_mixer",
+          "boom_mic",
+          "rigging_gear"
+        ]
+      },
+      {
+        "id": "E4",
+        "title": "Scene 5",
+        "start": "2025-04-29T21:30:00",
+        "end": "2025-04-29T23:30:00",
+        "resourceId": "L3",
+        "color": "#32CD32",
+        "textColor": "#000000",
+        "description": "Shooting Scene 5 at Crash Site",
+        "location": "Crash Zone, Desert Highway, NV",
+        "crew": [
+          "Director",
+          "DP",
+          "Sound Mixer",
+          "Gaffer",
+          "Key Grip"
+        ],
+        "equipment": [
+          "camera1",
+          "camera2",
+          "sound_mixer",
+          "boom_mic",
+          "spotlight",
+          "rigging_gear"
+        ]
+      },
+      {
+        "id": "E5",
+        "title": "Scene 2",
+        "start": "2025-04-30T05:00:00",
+        "end": "2025-04-30T08:00:00",
+        "resourceId": "L2",
+        "color": "#4682B4",
+        "textColor": "#FFFFFF",
+        "description": "Shooting Scene 2 at Radio Tent",
+        "location": "Tent Site, Desert Highway, NV",
+        "crew": [
+          "Director",
+          "DP",
+          "Sound Mixer",
+          "Gaffer",
+          "Key Grip"
+        ],
+        "equipment": [
+          "camera1",
+          "camera2",
+          "sound_mixer",
+          "boom_mic",
+          "floodlights",
+          "rigging_gear"
+        ]
+      },
+      {
+        "id": "E6",
+        "title": "Scene 6",
+        "start": "2025-04-30T08:30:00",
+        "end": "2025-04-30T11:30:00",
+        "resourceId": "L2",
+        "color": "#6A5ACD",
+        "textColor": "#FFFFFF",
+        "description": "Shooting Scene 6 at Radio Tent",
+        "location": "Tent Site, Desert Highway, NV",
+        "crew": [
+          "Director",
+          "DP",
+          "Sound Mixer",
+          "Gaffer",
+          "Key Grip"
+        ],
+        "equipment": [
+          "camera1",
+          "camera2",
+          "sound_mixer",
+          "boom_mic",
+          "rigging_gear"
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "id": "L1",
+        "title": "Deserted Highway",
+        "type": "location"
+      },
+      {
+        "id": "L2",
+        "title": "Radio Tent",
+        "type": "location"
+      },
+      {
+        "id": "L3",
+        "title": "Crash Site",
+        "type": "location"
+      },
+      {
+        "id": "L4",
+        "title": "Desolation Road",
+        "type": "location"
+      }
+    ]
+  },
+  "gantt_data": {
+    "tasks": [
+      {
+        "id": "T1",
+        "text": "Setup Scene 1",
+        "start_date": "2025-04-28 16:00",
+        "end_date": "2025-04-28 18:00",
+        "progress": 0,
+        "parent": "S1",
+        "dependencies": [],
+        "resource_ids": [
+          "L1"
+        ],
+        "type": "setup",
+        "color": "#F0E68C"
+      },
+      {
+        "id": "S1",
+        "text": "Scene 1 Shooting",
+        "start_date": "2025-04-28 18:00",
+        "end_date": "2025-04-28 20:00",
+        "progress": 0,
+        "parent": "",
+        "dependencies": [
+          "T1"
+        ],
+        "resource_ids": [
+          "L1"
+        ],
+        "type": "scene",
+        "color": "#FFA07A"
+      },
+      {
+        "id": "T2",
+        "text": "Setup Scene 4",
+        "start_date": "2025-04-28 20:00",
+        "end_date": "2025-04-28 21:30",
+        "progress": 0,
+        "parent": "S4",
+        "dependencies": [],
+        "resource_ids": [
+          "L4"
+        ],
+        "type": "setup",
+        "color": "#F0E68C"
+      },
+      {
+        "id": "S4",
+        "text": "Scene 4 Shooting",
+        "start_date": "2025-04-28 21:30",
+        "end_date": "2025-04-28 23:30",
+        "progress": 0,
+        "parent": "",
+        "dependencies": [
+          "T2"
+        ],
+        "resource_ids": [
+          "L4"
+        ],
+        "type": "scene",
+        "color": "#20B2AA"
+      },
+      {
+        "id": "T3",
+        "text": "Setup Scene 3",
+        "start_date": "2025-04-29 16:00",
+        "end_date": "2025-04-29 18:00",
+        "progress": 0,
+        "parent": "S3",
+        "dependencies": [],
+        "resource_ids": [
+          "L3"
+        ],
+        "type": "setup",
+        "color": "#F0E68C"
+      },
+      {
+        "id": "S3",
+        "text": "Scene 3 Shooting",
+        "start_date": "2025-04-29 18:00",
+        "end_date": "2025-04-29 20:00",
+        "progress": 0,
+        "parent": "",
+        "dependencies": [
+          "T3"
+        ],
+        "resource_ids": [
+          "L3"
+        ],
+        "type": "scene",
+        "color": "#FF6347"
+      },
+      {
+        "id": "T4",
+        "text": "Setup Scene 5",
+        "start_date": "2025-04-29 20:00",
+        "end_date": "2025-04-29 21:30",
+        "progress": 0,
+        "parent": "S5",
+        "dependencies": [],
+        "resource_ids": [
+          "L3"
+        ],
+        "type": "setup",
+        "color": "#F0E68C"
+      },
+      {
+        "id": "S5",
+        "text": "Scene 5 Shooting",
+        "start_date": "2025-04-29 21:30",
+        "end_date": "2025-04-29 23:30",
+        "progress": 0,
+        "parent": "",
+        "dependencies": [
+          "T4"
+        ],
+        "resource_ids": [
+          "L3"
+        ],
+        "type": "scene",
+        "color": "#32CD32"
+      },
+      {
+        "id": "T5",
+        "text": "Setup Scene 2",
+        "start_date": "2025-04-30 04:00",
+        "end_date": "2025-04-30 05:00",
+        "progress": 0,
+        "parent": "S2",
+        "dependencies": [],
+        "resource_ids": [
+          "L2"
+        ],
+        "type": "setup",
+        "color": "#F0E68C"
+      },
+      {
+        "id": "S2",
+        "text": "Scene 2 Shooting",
+        "start_date": "2025-04-30 05:00",
+        "end_date": "2025-04-30 08:00",
+        "progress": 0,
+        "parent": "",
+        "dependencies": [
+          "T5"
+        ],
+        "resource_ids": [
+          "L2"
+        ],
+        "type": "scene",
+        "color": "#4682B4"
+      },
+      {
+        "id": "T6",
+        "text": "Setup Scene 6",
+        "start_date": "2025-04-30 08:00",
+        "end_date": "2025-04-30 08:30",
+        "progress": 0,
+        "parent": "S6",
+        "dependencies": [],
+        "resource_ids": [
+          "L2"
+        ],
+        "type": "setup",
+        "color": "#F0E68C"
+      },
+      {
+        "id": "S6",
+        "text": "Scene 6 Shooting",
+        "start_date": "2025-04-30 08:30",
+        "end_date": "2025-04-30 11:30",
+        "progress": 0,
+        "parent": "",
+        "dependencies": [
+          "T6"
+        ],
+        "resource_ids": [
+          "L2"
+        ],
+        "type": "scene",
+        "color": "#6A5ACD"
+      }
+    ],
+    "links": [
+      {
+        "id": "L1",
+        "source": "T1",
+        "target": "S1",
+        "type": "FS"
+      },
+      {
+        "id": "L2",
+        "source": "T2",
+        "target": "S4",
+        "type": "FS"
+      },
+      {
+        "id": "L3",
+        "source": "T3",
+        "target": "S3",
+        "type": "FS"
+      },
+      {
+        "id": "L4",
+        "source": "T4",
+        "target": "S5",
+        "type": "FS"
+      },
+      {
+        "id": "L5",
+        "source": "T5",
+        "target": "S2",
+        "type": "FS"
+      },
+      {
+        "id": "L6",
+        "source": "T6",
+        "target": "S6",
+        "type": "FS"
+      }
+    ],
+    "resources": [
+      {
+        "id": "R1",
+        "name": "Director",
+        "type": "crew",
+        "calendar_id": "C1"
+      },
+      {
+        "id": "R2",
+        "name": "DP",
+        "type": "crew",
+        "calendar_id": "C1"
+      },
+      {
+        "id": "R3",
+        "name": "Sound Mixer",
+        "type": "crew",
+        "calendar_id": "C1"
+      },
+      {
+        "id": "R4",
+        "name": "Gaffer",
+        "type": "crew",
+        "calendar_id": "C1"
+      },
+      {
+        "id": "R5",
+        "name": "Key Grip",
+        "type": "crew",
+        "calendar_id": "C1"
+      }
+    ]
+  },
+  "summary": {
+    "total_days": 3,
+    "start_date": "2025-04-28",
+    "end_date": "2025-04-30",
+    "total_scenes": 6,
+    "total_pages": 23,
+    "total_runtime_minutes": 240
+  },
+  "optimization_notes": [
+    "Shooting at night for desert scenes to match script requirements",
+    "Minimized location changes by grouping nearby settings",
+    "Scheduled end of dusk and dawn scenes for optimal lighting"
+  ],
+  "timestamp": "2025-04-28T13:20:33.266544",
+  "saved_files": {
+    "main": "data/schedules/schedule_20250428_132033.json",
+    "calendar": "data/schedules/calendar/calendar_20250428_132033.json",
+    "gantt": "data/schedules/gantt/gantt_20250428_132033.json"
+  }
+}
