@@ -43,6 +43,7 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from dotenv import load_dotenv
 import sys
+import undetected_chromedriver as uc
 from webdriver_manager.core.os_manager import ChromeType
 
 # Load environment variables
@@ -606,14 +607,42 @@ def continuously_monitor_sheet(args, logger):
                         except Exception as chrome_ex:
                             logger.error(f"Error setting up ChromeDriver on macOS: {chrome_ex}")
                             raise
+                    elif RENDER_ENVIRONMENT:
+                        # For Render environment, use the system chromedriver with specific version
+                        driver_path = "/usr/bin/chromedriver"
+                        logger.info(f"Using system ChromeDriver at: {driver_path}")
                     else:
                         # For other platforms, use the standard approach
                         driver_path = ChromeDriverManager().install()
                         logger.info(f"ChromeDriver installed at: {driver_path}")
-                        
+                    
                     # Create browser instance
                     driver_service = Service(executable_path=driver_path)
-                    browser = webdriver.Chrome(service=driver_service, options=chrome_options)
+                    
+                    # For Render environment, use ChromeOptions to ensure compatibility
+                    if RENDER_ENVIRONMENT:
+                        from selenium import webdriver
+                        import undetected_chromedriver as uc
+                        
+                        # Add version_main parameter to match Chrome 136 version
+                        uc_options = uc.ChromeOptions()
+                        for argument in chrome_options.arguments:
+                            uc_options.add_argument(argument)
+                        
+                        # Copy experimental options if any
+                        if chrome_options._experimental_options:
+                            for key, value in chrome_options._experimental_options.items():
+                                uc_options.add_experimental_option(key, value)
+                        
+                        uc_options.binary_location = "/usr/bin/chromium"
+                        browser = uc.Chrome(
+                            options=uc_options, 
+                            driver_executable_path=driver_path,
+                            version_main=136  # Set version to match Chrome 136
+                        )
+                    else:
+                        browser = webdriver.Chrome(service=driver_service, options=chrome_options)
+                    
                     browser.set_window_size(1920, 1080)
                     
                     try:

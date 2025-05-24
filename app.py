@@ -144,6 +144,10 @@ def start_monitoring_thread():
 def setup_chrome_driver():
     """Setup Chrome driver with undetected-chromedriver"""
     try:
+        # Use context manager to handle version mismatch
+        from selenium.webdriver.chrome.service import Service
+        from webdriver_manager.chrome import ChromeDriverManager
+        
         chrome_options = uc.ChromeOptions()
         chrome_options.add_argument("--headless=new")
         chrome_options.add_argument("--no-sandbox")
@@ -162,9 +166,17 @@ def setup_chrome_driver():
             chrome_options.add_argument('--disable-dev-tools')
             chrome_options.add_argument('--no-zygote')
             chrome_options.add_argument('--single-process')
-        
-        # Create and return the undetected Chrome driver
-        driver = uc.Chrome(options=chrome_options)
+            
+            # Driver configuration for Render environment
+            driver = uc.Chrome(
+                options=chrome_options,
+                driver_executable_path="/usr/bin/chromedriver",
+                version_main=136  # Explicitly set to match Chrome v136 as reported in the error
+            )
+        else:
+            # For non-Render environments, use automatic version detection
+            driver = uc.Chrome(options=chrome_options)
+            
         logger.info("Chrome driver initialized successfully!")
         return driver
     except Exception as e:
