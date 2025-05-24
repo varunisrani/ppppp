@@ -623,6 +623,8 @@ def continuously_monitor_sheet(args, logger):
                     if RENDER_ENVIRONMENT:
                         from selenium import webdriver
                         import undetected_chromedriver as uc
+                        import subprocess
+                        import re
                         
                         # Create a fresh uc.ChromeOptions object
                         uc_options = uc.ChromeOptions()
@@ -632,18 +634,36 @@ def continuously_monitor_sheet(args, logger):
                             uc_options.add_argument(argument)
                         
                         # Set binary location for chromium
-                        uc_options.binary_location = "/usr/bin/chromium"
+                        chrome_binary = "/usr/bin/chromium"
+                        uc_options.binary_location = chrome_binary
+                        logger.info(f"Using Chrome binary at: {chrome_binary}")
                         
                         # Copy experimental options if any
                         if hasattr(chrome_options, '_experimental_options') and chrome_options._experimental_options:
                             for key, value in chrome_options._experimental_options.items():
                                 uc_options.add_experimental_option(key, value)
                         
+                        # Try to detect Chrome version dynamically
+                        chrome_version = 136  # Default fallback version
+                        try:
+                            chrome_version_output = subprocess.check_output([chrome_binary, "--version"], stderr=subprocess.STDOUT).decode('utf-8').strip()
+                            logger.info(f"Chrome version output: {chrome_version_output}")
+                            # Extract version number (e.g. "Chromium 136.0.7103.113" -> 136)
+                            version_match = re.search(r'(\d+)\.', chrome_version_output)
+                            if version_match:
+                                detected_version = int(version_match.group(1))
+                                chrome_version = detected_version
+                                logger.info(f"Detected Chrome major version: {chrome_version}")
+                        except Exception as version_error:
+                            logger.warning(f"Could not detect Chrome version automatically, using default (136): {version_error}")
+                        
+                        logger.info(f"Setting Chrome version to: {chrome_version}")
+                        
                         # Create undetected_chromedriver with explicit version
                         browser = uc.Chrome(
                             options=uc_options, 
                             driver_executable_path=driver_path,
-                            version_main=136  # Set version to match Chrome 136 on Render
+                            version_main=chrome_version  # Set version to match Chrome version on Render
                         )
                     else:
                         browser = webdriver.Chrome(service=driver_service, options=chrome_options)

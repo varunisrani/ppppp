@@ -147,6 +147,8 @@ def setup_chrome_driver():
         # Use context manager to handle version mismatch
         from selenium.webdriver.chrome.service import Service
         from webdriver_manager.chrome import ChromeDriverManager
+        import subprocess
+        import re
         
         chrome_options = uc.ChromeOptions()
         chrome_options.add_argument("--headless=new")
@@ -173,8 +175,20 @@ def setup_chrome_driver():
             chromedriver_path = "/usr/bin/chromedriver"
             logger.info(f"Using ChromeDriver at: {chromedriver_path}")
             
-            # Set explicit version to match Chrome 136 as reported in the error
-            chrome_version = 136
+            # Try to detect Chrome version dynamically
+            chrome_version = 136  # Default fallback version
+            try:
+                chrome_version_output = subprocess.check_output([chrome_binary, "--version"], stderr=subprocess.STDOUT).decode('utf-8').strip()
+                logger.info(f"Chrome version output: {chrome_version_output}")
+                # Extract version number (e.g. "Chromium 136.0.7103.113" -> 136)
+                version_match = re.search(r'(\d+)\.', chrome_version_output)
+                if version_match:
+                    detected_version = int(version_match.group(1))
+                    chrome_version = detected_version
+                    logger.info(f"Detected Chrome major version: {chrome_version}")
+            except Exception as version_error:
+                logger.warning(f"Could not detect Chrome version automatically, using default (136): {version_error}")
+                
             logger.info(f"Setting Chrome version to: {chrome_version}")
             
             driver = uc.Chrome(
