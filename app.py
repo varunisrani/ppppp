@@ -161,26 +161,49 @@ def setup_chrome_driver():
         
         if RENDER_ENVIRONMENT:
             # Set specific Chrome binary path for Render
-            chrome_options.binary_location = "/usr/bin/chromium"
+            chrome_binary = "/usr/bin/chromium"
+            logger.info(f"Setting Chrome binary location to: {chrome_binary}")
+            chrome_options.binary_location = chrome_binary
             chrome_options.add_argument('--disable-software-rasterizer')
             chrome_options.add_argument('--disable-dev-tools')
             chrome_options.add_argument('--no-zygote')
             chrome_options.add_argument('--single-process')
             
             # Driver configuration for Render environment
+            chromedriver_path = "/usr/bin/chromedriver"
+            logger.info(f"Using ChromeDriver at: {chromedriver_path}")
+            
+            # Set explicit version to match Chrome 136 as reported in the error
+            chrome_version = 136
+            logger.info(f"Setting Chrome version to: {chrome_version}")
+            
             driver = uc.Chrome(
                 options=chrome_options,
-                driver_executable_path="/usr/bin/chromedriver",
-                version_main=136  # Explicitly set to match Chrome v136 as reported in the error
+                driver_executable_path=chromedriver_path,
+                version_main=chrome_version
             )
         else:
             # For non-Render environments, use automatic version detection
+            logger.info("Using automatic ChromeDriver version detection")
             driver = uc.Chrome(options=chrome_options)
             
         logger.info("Chrome driver initialized successfully!")
         return driver
     except Exception as e:
         logger.error(f"Error initializing Chrome driver: {e}")
+        
+        # Add more diagnostic information
+        if RENDER_ENVIRONMENT:
+            try:
+                import subprocess
+                chrome_version_output = subprocess.check_output(["/usr/bin/chromium", "--version"], stderr=subprocess.STDOUT).decode('utf-8').strip()
+                logger.error(f"Installed Chrome version: {chrome_version_output}")
+                
+                chromedriver_version_output = subprocess.check_output(["/usr/bin/chromedriver", "--version"], stderr=subprocess.STDOUT).decode('utf-8').strip()
+                logger.error(f"Installed ChromeDriver version: {chromedriver_version_output}")
+            except Exception as diag_error:
+                logger.error(f"Error getting diagnostic info: {diag_error}")
+                
         raise
 
 # Initialize the driver

@@ -624,21 +624,26 @@ def continuously_monitor_sheet(args, logger):
                         from selenium import webdriver
                         import undetected_chromedriver as uc
                         
-                        # Add version_main parameter to match Chrome 136 version
+                        # Create a fresh uc.ChromeOptions object
                         uc_options = uc.ChromeOptions()
+                        
+                        # Add the same arguments that were in chrome_options
                         for argument in chrome_options.arguments:
                             uc_options.add_argument(argument)
                         
+                        # Set binary location for chromium
+                        uc_options.binary_location = "/usr/bin/chromium"
+                        
                         # Copy experimental options if any
-                        if chrome_options._experimental_options:
+                        if hasattr(chrome_options, '_experimental_options') and chrome_options._experimental_options:
                             for key, value in chrome_options._experimental_options.items():
                                 uc_options.add_experimental_option(key, value)
                         
-                        uc_options.binary_location = "/usr/bin/chromium"
+                        # Create undetected_chromedriver with explicit version
                         browser = uc.Chrome(
                             options=uc_options, 
                             driver_executable_path=driver_path,
-                            version_main=136  # Set version to match Chrome 136
+                            version_main=136  # Set version to match Chrome 136 on Render
                         )
                     else:
                         browser = webdriver.Chrome(service=driver_service, options=chrome_options)
